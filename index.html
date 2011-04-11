@@ -1,57 +1,68 @@
 <html>
     <head>
-        <title>home | dmulog.in </title>
+        <title>dmulog.in</title>
         <link rel="stylesheet" href="/media/css/base.css">
-        <script
-            src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-        <script src="/media/js/jquery.timeago.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function() {
-                    $(".date").timeago();
-                    });
-        </script>
     </head>
     <body>
-        <div id="header" class="page">
-            <a href="/" class="the-name">Dipanjan Mukherjee</a>
-            <a href="/about" class="other-header-links">about</a>
-            <a href="/posts" class="other-header-links">posts</a>
-            <a href="/tags" class="other-header-links">tags</a>
-            <a href="http://github.com/schatten" class="other-header-links">github</a>
+        <div class="page header"> 
+            <a href="/" class="title">Dipanjan Mukherjee</a>
+            <span class="extras">
+                <a href="/" class="extras">home</a>
+                <a href="http://github.com/schatten" class="extras">github</a>
+                <a href="/feed/rss" class="extras"
+                    style="visibility:hidden;">feed</a>
+            </span>
         </div>
-        <div id="main" class="page">
-            
-<div>
-    <div id="software-i-use">
-        <b>Software I find amazing:</b>
-        <a class="the-name" href="http://www.debian.org"><img
-            src="/media/im/debian-logo.png"></a>
-        <a class="the-name" href="http://www.vim.org"><img
-            src="/media/im/vim-logo.png"></a>
-        <a class="the-name" href="http://www.python.org"><img
-            src="/media/im/python-logo.png"></a>
-        <a class="the-name" href="http://www.djangoproject.com"><img
-            src="/media/im/django-logo.png"></a>
-    </div>
-    <div id="the-text">
-        <span class="index-head">Writings:</span>
-        <ul style="padding-left:0px;">
-        <li class="home-index-listing">
-        <div class="date ind-date" title="2010-10-19T19:45:23Z"></div>
-            <a href="/selection_test"
-            class="index-listing">WebDev Selection Test</a></li>
-        <li class="home-index-listing">
-        <div class="date ind-date" title="2010-10-19T19:45:23Z"></div>
-            <a href="/markdir"
-            class="index-listing">MarkDir</a></li>
+        
+<div class="page content">
+    <div class="left_container">
+        <h1 class="container_inner_heading">Blog Posts</h1>
+        <ul>
+            <li>
+                <div class="index_post_entry">
+                    <h3 class="index_post_title">
+                        <a href="/2010/10/markdir.html"
+                            class="index_post_title">
+                        MarkDir
+                        </a>
+                    </h3>
+                    <p class="index_post_excerpt">A shell script snippet to enable persistence of present directory across terminals opened in a session. Useful if you 'cd' into your project directory every time you open a terminal.</p>
+                </div>
+            </li>
+            <li>
+                <div class="index_post_entry">
+                    <h3 class="index_post_title">
+                        <a href="/2010/10/selection_test.html"
+                            class="index_post_title">
+                        WebDev Selection Test
+                        </a>
+                    </h3>
+                    <p class="index_post_excerpt">A simple test to select web-developers. Highly experimental. Designed to be novice friendly.</p>
+                </div>
+            </li>
         </ul>
+    </div>
+    <div class="right_container">
+        <h1 class="container_inner_heading">Other Stuff</h1>
     </div>
 </div>
 
+        <div class="page footer_wrapper">
+            <div class="footer">
+                <ul class="contact">
+                    <li>&copy; Dipanjan Mukherjee</li>
+                    <li>Student, Software Enthusiast</li>
+                    <li>dipanjan.mu &lt;at&gt; gmail &lt;dot&gt; com</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <ul class="contact">
+                    <li><a class="post small" href="http://github.com/schatten">http://github.com/schatten</a></li>
+                    <li>&nbsp;</li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
 
-        </div>
-        <div id="footer" class="page">
-            &nbsp;
         </div>
     </body>
 </html>
