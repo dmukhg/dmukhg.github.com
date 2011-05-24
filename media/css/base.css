@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: helvetica, arial, verdana;
+    line-height: 1.7em;
     background: url('/media/im/background.png') repeat-x #ffffff;
 }
 
@@ -66,6 +67,7 @@ a.extras:hover {
     color: #555555;
     background: url('/media/im/footer.png') repeat-x #ffffff;
     min-height: 200px;
+    line-height: normal;
     clear: both;
 }
 
@@ -125,4 +127,11 @@ a.index_post_title:hover {
 }
 .index_post_title_green:hover {
     color: #ff4400;
+}
+
+span.inline_code {
+    border: 1px solid #999999;
+    background-color: #ededed;
+    padding-right: 4px;
+    padding-left: 4px;
 }
