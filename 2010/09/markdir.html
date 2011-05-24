@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>MarkDir</title>
+        <link rel="stylesheet" href="/media/css/base.css">
+        <link rel="stylesheet" href="/media/css/fruity.css">
+    </head>
+    <body>
+        <div class="page header"> 
+            <a href="/" class="title">Dipanjan Mukherjee</a>
+            <span class="extras">
+                <a href="/" class="extras">home</a>
+                <a href="http://github.com/schatten" class="extras">github</a>
+                <a href="/feed/rss" class="extras"
+                    style="visibility:hidden;">feed</a>
+            </span>
+        </div>
+         
+<div class="page content">
+    <div class="left_container">
+        <h1 class="container_inner_heading">MarkDir</h1>
+        <div class="index_post_entry post">
+            <p>This post describes how you can open new terminals which are already on a directory of your choice.</p>
+<p>I use the <a href="http://www.vim.org">Vim</a> text editor. But I find the keybindings for its multiple windows quite cumbersome.
+Also, I use the <a href="http://awesome.naquadah.org">awesome</a> window manager. Opening terminals in this wm is incredibly easy. Often, 
+I use multiple terminal windows to edit code at the same time. To save me from having to keep cd-ing 
+into my projects over and over again, I wrote this "tiny" shell function.</p>
+<script src="http://gist.github.com/634244.js"> </script>
+
+<p>The comments are self explanatory. If you are not feeling like reading code, just paste this code
+into your ~/.bashrc or ~/.zshrc. It works fine on my zsh. Should work like wise on any other shell.</p>
+<p>Quick Walkthrough</p>
+<ul>
+<li>type "touch ~/.mark_dir" at the terminal</li>
+<li>when you are at your project dir, just enter 'm' at the terminal. this
+   will mark this directory and cd into it every time you open a new terminal</li>
+<li>if you are done with this project, just type 'u'. This will remove
+   the directory marker and take you to the home directory as well.</li>
+</ul>
+<p>Nifty, right?</p>
+        </div>
+
+        <div class="index_post_entry">
+            <h3 class="index_post_title">Other posts</h3>
+            <ul style="margin-top:0px;">
+                <li>
+                    <a class="index_post_title_green"
+                        href="/2010/10/selection_test.html">
+                        WebDev Selection Test</a>
+                </li>
+                <li>
+                </li>
+        </div>
+    </div>
+</div>
+
+        <div class="page footer_wrapper">
+            <div class="footer">
+                <ul class="contact">
+                    <li>&copy; Dipanjan Mukherjee</li>
+                    <li>Student, Software Enthusiast</li>
+                    <li>dipanjan.mu &lt;at&gt; gmail &lt;dot&gt; com</li>
+                </ul>
+            </div>
+            <div class="footer">
+                <ul class="contact">
+                    <li><a class="post small"
+                        href="http://github.com/schatten">github</a></li>
+                    <li><a class="post small"
+                        href="http://in.linkedin.com/pub/dipanjan-mukherjee/26/b6a/18a">linkedin</a></li>
+                    <li>&nbsp;</li>
+                </ul>
+            </div>
+
+        </div>
+    </body>
+</html>
