@@ -135,3 +135,13 @@ span.inline_code {
     padding-right: 4px;
     padding-left: 4px;
 }
+
+img {
+    border: 1px solid #aaaaaa;
+    padding: 3px;
+    margin: auto;
+}
+
+div.about {
+    font-size: 9pt;
+}
