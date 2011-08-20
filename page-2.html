@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <title>
+            dmulog.in
+        </title>
+        <link rel="stylesheet" href="/media/css/base.css">
+        <link rel="stylesheet" href="/media/css/monokai.css">
+    </head>
+    <body>
+        <div id="entire_page" class="page">
+            <div id="header" class="header">
+                <a id="homelink" class="homelink" href="/">Dipanjan Mukherjee</a> 
+
+                <a id="toplink-1" class="toplink right"
+                    href="http://github.com/schatten/">projects</a>
+                <!--a id="toplink-2" class="toplink right"
+                href="/archive/about">about</a>-->
+            </div>
+
+            <hr>
+            
+            <div id="post" class="post">
+                <a href="/archive/1.html" class="post-title">MarkDir : persistence in terminals without multiplexers or tabs</a>
+                <span class="post-date">September, 2010</span>
+                <div id="post-contents" class="post-contents">
+                    <p>This post describes how you can open new terminals which are already on a directory of your choice.</p>
+<p>I use the <a href="http://www.vim.org">Vim</a> text editor. But I find the keybindings for its multiple windows quite cumbersome.
+Also, I use the <a href="http://awesome.naquadah.org">awesome</a> window manager. Opening terminals in this wm is incredibly easy. Often, 
+I use multiple terminal windows to edit code at the same time. To save me from having to keep cd-ing 
+into my projects over and over again, I wrote this "tiny" shell function.</p><div class="highlight"><pre><span class="c"># ===================== Mark functions =======================</span>
+<span class="c"># calling mark, sets up a file ~/.mark_dir containing</span>
+<span class="c"># the value of the current directory</span>
+<span class="c"># hence forth, any terminal you open will be directed to this</span>
+<span class="c"># directory</span>
+<span class="k">function </span>m<span class="o">(){</span>
+    <span class="nb">printf</span> <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span> &gt; ~/.mark_dir
+    <span class="nb">echo</span> <span class="s1">&#39;Directory Marked&#39;</span>
+<span class="o">}</span>
+<span class="c"># to turn this off, call unmark or call mark on some other directory</span>
+<span class="c"># unmark resets mark_dir to the home directory and also places you at ~</span>
+<span class="k">function </span>u<span class="o">(){</span>
+    <span class="nb">printf</span> ~ &gt; ~/.mark_dir
+    <span class="nb">echo</span> <span class="s1">&#39;Directory Marked Reset to home&#39;</span>
+    <span class="nb">cd</span> ~
+<span class="o">}</span>
+<span class="nb">read </span>MARKDIR &lt; ~/.mark_dir
+<span class="nb">cd</span> <span class="nv">$MARKDIR</span>
+
+<span class="c"># ===================== End Mark functions ===================</span>
+</pre></div>
+<p>The comments are self explanatory. If you are not feeling like reading code, just paste this code
+into your ~/.bashrc or ~/.zshrc. It works fine on my zsh. Should work like wise on any other shell.</p>
+<p>Quick Walkthrough</p>
+<ol>
+<li>type "touch ~/.mark_dir" at the terminal. You need to do this only
+    the first time you install the shell function.</li>
+<li>when you are at your project dir, just enter 'm' at the terminal. this
+    will mark this directory and cd into it every time you open a new terminal</li>
+<li>if you are done with this project, just type 'u'. This will remove
+    the directory marker and take you to the home directory as well.</li>
+</ol>
+<p>Nifty, right?</p>
+                </div>
+            </div>
+            <hr>
+
+            <div id="footer" class="footer">
+                <a href="index" class="left footlink">newer</a>
+                <a href="" class="right footlink"></a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,87 +1,153 @@
 <html>
     <head>
-        <title>dmulog.in</title>
+        <title>
+            dmulog.in
+        </title>
         <link rel="stylesheet" href="/media/css/base.css">
-        <link rel="stylesheet" href="/media/css/fruity.css">
+        <link rel="stylesheet" href="/media/css/monokai.css">
     </head>
     <body>
-        <div class="page header"> 
-            <a href="/" class="title">Dipanjan Mukherjee</a>
-            <span class="extras">
-                <a href="/" class="extras">home</a>
-                <a href="http://github.com/schatten" class="extras">github</a>
-                <a href="/feed/rss" class="extras"
-                    style="visibility:hidden;">feed</a>
-            </span>
-        </div>
-        
-<div class="page content">
-    <div class="left_container">
-        <h1 class="container_inner_heading">Blog Posts</h1>
-        <ul>
-            <li>
-                <div class="index_post_entry">
-                    <h3 class="index_post_title">
-                        <a href="/2011/05/gwt-proxy.html"
-                            class="index_post_title">
-                        A simple proxy servlet for GWT devmode
-                        </a>
-                    </h3>
-                    <p class="index_post_excerpt">A servlet that forwards particular requests to the GWT development server to another server.</p>
-                </div>
-            </li>
-            <li>
-                <div class="index_post_entry">
-                    <h3 class="index_post_title">
-                        <a href="/2010/10/selection_test.html"
-                            class="index_post_title">
-                        WebDev Selection Test
-                        </a>
-                    </h3>
-                    <p class="index_post_excerpt">A simple test to select web-developers. Highly experimental. Designed to be novice friendly.</p>
-                </div>
-            </li>
-            <li>
-                <div class="index_post_entry">
-                    <h3 class="index_post_title">
-                        <a href="/2010/09/markdir.html"
-                            class="index_post_title">
-                        MarkDir
-                        </a>
-                    </h3>
-                    <p class="index_post_excerpt">A shell script snippet to enable persistence of present directory across terminals opened in a session. Useful if you 'cd' into your project directory every time you open a terminal.</p>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <div class="right_container">
-        <h1 class="container_inner_heading">About</h1>
-        <div class="right_container" style="text-align: center;"><img
-            src="/media/im/snap2.jpg">
-            <div class="about">student. programmer. minimalist.</div>
-        </div>
-        
-    </div>
-</div>
+        <div id="entire_page" class="page">
+            <div id="header" class="header">
+                <a id="homelink" class="homelink" href="/">Dipanjan Mukherjee</a> 
 
-        <div class="page footer_wrapper">
-            <div class="footer">
-                <ul class="contact">
-                    <li>&copy; Dipanjan Mukherjee</li>
-                    <li>Student, Software Enthusiast</li>
-                    <li>dipanjan.mu &lt;at&gt; gmail &lt;dot&gt; com</li>
-                </ul>
-            </div>
-            <div class="footer">
-                <ul class="contact">
-                    <li><a class="post small"
-                        href="http://github.com/schatten">github</a></li>
-                    <li><a class="post small"
-                        href="http://in.linkedin.com/pub/dipanjan-mukherjee/26/b6a/18a">linkedin</a></li>
-                    <li>&nbsp;</li>
-                </ul>
+                <a id="toplink-1" class="toplink right"
+                    href="http://github.com/schatten/">projects</a>
+                <!--a id="toplink-2" class="toplink right"
+                href="/archive/about">about</a>-->
             </div>
 
+            <hr>
+            
+            <div id="post" class="post">
+                <a href="/archive/4.html" class="post-title">Refactoring Java, Yuck.</a>
+                <span class="post-date">May, 2011</span>
+                <div id="post-contents" class="post-contents">
+                    <p><a href="http://paulgraham.com/">Paul Graham</a> very rightly says, a programming language should be
+malleable. It should allow you to quickly prototype a project and then
+beat the code into shape. </p>
+<p>Static typing, like in java, is prohibitive of this approach. Another 
+bureaucratic feature I could do without is interfaces. Sure, they 
+solve a lot of problems. But I would say duck typing is a better way to go.</p>
+<p>I am writing a RIA in <a href="http://webtoolkit.googlecode.com/">GWT</a>. I am trying to adhere to the design patterns 
+laid out in the documentation. Sometimes, in the spirit of the code, just
+to make something work, I tend to step out of the design pattern and code
+arbitrarily. Now, when I have to refactor the code to align it to the pattern,
+I find myself terrified of the effort it would take to acheive that.</p>
+<p>Python, I shall see you soon, and when I do...</p>
+                </div>
+            </div>
+            <hr>
+            <div id="post" class="post">
+                <a href="/archive/3.html" class="post-title">A simple proxy servlet for GWT devmode</a>
+                <span class="post-date">May, 2011</span>
+                <div id="post-contents" class="post-contents">
+                    <p>Disclaimer: This post is completely based on the utility I derived
+from <a href="http://kennethjorgensen.com/blog/2010/04/12/proxy-servlet-for-gwt-in-devmode/">Kenneth Jorgensen's blog post</a></p>
+<p>When you start developing with GWT, you often run into the hair
+pulling dead end of the dreaded "Same Origin Policy". I am sure you
+have googled your way into understanding what the SOP is and why it is
+in place. If like me, you use a programming language other than java
+on your server, one of the easiest ways out would be to have a servlet
+that proxies your requests to the non-java server (django, rails etc.).</p>
+<p>I won't dump the entire java servlet file here. You can find a link
+<a href="/media/resources/ProxyServlet.java">here</a>. There is a dirty hack in the servlet, I describe it later. </p>
+<p>To make this work, you have to edit the web.xml file within the
+WEB-INF directory within the war directory not the *.gwt.xml file.
+As far as I understand, (I am a noob to GWT) the *.gwt.xml file is
+to be updated with the details of a servlet when you use GWT-RPC.</p>
+<p>Here is a snapshot of my web.xml.</p><div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="cp">&lt;!DOCTYPE web-app</span>
+<span class="cp">    PUBLIC &quot;-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN&quot;</span>
+<span class="cp">    &quot;http://java.sun.com/dtd/web-app_2_3.dtd&quot;&gt;</span>
+
+<span class="nt">&lt;web-app&gt;</span>
+    <span class="nt">&lt;servlet&gt;</span>
+        <span class="nt">&lt;servlet-name&gt;</span>proxy<span class="nt">&lt;/servlet-name&gt;</span>
+        <span class="nt">&lt;servlet-class&gt;</span>in.dmulog.gwt.ProxyServlet<span class="nt">&lt;/servlet-class&gt;</span>
+    <span class="nt">&lt;/servlet&gt;</span>
+    <span class="nt">&lt;servlet-mapping&gt;</span>
+        <span class="nt">&lt;servlet-name&gt;</span>proxy<span class="nt">&lt;/servlet-name&gt;</span>
+        <span class="nt">&lt;url-pattern&gt;</span>/proxy/*<span class="nt">&lt;/url-pattern&gt;</span>
+    <span class="nt">&lt;/servlet-mapping&gt;</span>
+    <span class="c">&lt;!-- Default page to serve --&gt;</span>
+    <span class="nt">&lt;welcome-file-list&gt;</span>
+        <span class="nt">&lt;welcome-file&gt;</span>Client.html<span class="nt">&lt;/welcome-file&gt;</span>
+    <span class="nt">&lt;/welcome-file-list&gt;</span>
+<span class="nt">&lt;/web-app&gt;</span>
+</pre></div>
+<p>Okay, if you update the code according to your own setup, any
+requests at <span class="inline_code">localhost:8888/proxy/asdfg/asdf</span> will be forwarded to
+<span class="inline_code">localhost:8000/asdfg/asdf</span>. Or as the case may be. You can define all
+this in the java servlet file. </p>
+<p>Now about the dirty hack I talked about. Within the java file, line
+number 68 reads:</p><div class="highlight"><pre><span class="n">uri</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">req</span><span class="o">.</span><span class="na">getRequestURI</span><span class="o">().</span><span class="na">substring</span><span class="o">(</span><span class="mi">6</span><span class="o">));</span>
+</pre></div>
+<p>What the substring part does is converts
+<span class="inline_code">localhost:8888/proxy/foo/bar/baz</span> to a request to
+<span class="inline_code">localhost:8000/foo/bar/baz</span>. </p>
+<p>If we don't use the substring hack, it remains as a request to
+<span class="inline_code">localhost:8000/<em>proxy</em>/foo/bar/baz</span> which might not be useful in
+your case. You can possibly do this better with splitting the string
+and joining. But hey, I said it was dirty. </p>
+<p>Happy coding.</p>
+                </div>
+            </div>
+            <hr>
+            <div id="post" class="post">
+                <a href="/archive/2.html" class="post-title">WebDev Selection Test</a>
+                <span class="post-date">October, 2010</span>
+                <div id="post-contents" class="post-contents">
+                    <p>I had to select a few developers to work with me at developing the <a href="http://www.ecell-iitkgp.org">ecell website</a> further. 
+There are many loose ends to tie up. However, working out a selection procedure was in itself
+a mammoth task. I had to try to keep the technicalities to a minimum, focus on logic and interest, 
+both of which are difficult to cardinalize. I came up with a solution, with help from Sid who selected
+me in my first year. Test them on fundamentals which are not bound to any language/framework in particular.
+Logical tests and some database concepts. The common element in all these would-be questions was that they
+had left me amazed when I discovered the answers. </p>
+<p>Here is the paper.</p>
+<iframe width=100% height=560px frameborder=0 src=https://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=0BxG0waWYlVh4YjlhZGMxZDktYTQ1Mi00MDZlLTk5MGQtNDg3OWY4ZWI4YjM1&hl=en></iframe>
+
+<h2>Discussion:</h2>
+<p>Question 1:</p>
+<p>Concentrating on the relationship between the books and authors is the key point in this question.
+In one particular solution, there are 3 tables. One representing the authors. another for the books
+and a third one for the relationship. This table is often called a linker table.</p>
+<img src="/media/im/web-selections-db.png">
+
+<p>As is clearly visible, the linker table takes the pk (primary key:a unique identifier) of a book and 
+a pk of the author and connects the two in a manner which limits the number of columns : A key requirement
+in a database schema.</p>
+<p>Question 2:</p>
+<p>The flaw in this code snippet is that the /astra url will never be reached. This is because the line
+immediately above it captures all urls which begin with /a (including /astra) and the control never reaches 
+the /astra line. One way to circumvent this is to swap the two lines. This way, the condition is avoided.</p>
+<p>Question 3:</p>
+<p>We could use javascript to preload the images. This is the easy way out and works most of the time. I agree this
+involves prior knowledge of this feature. But infact, there is another way : Sprites.
+Assume you have the case as mentioned in the question. A rollover button. You have one image. When you move the mouse
+over the image, it changes. Assume the images are both 40x20 in size. Now you can compose an image of 40x40 size 
+containing both the images in two halves. Then using the CSS property of background-position, you can easily shift the image
+at the required event. This is a sure-shot method since there is only one image and will have been downloaded completely
+if it is being displayed at all. I agree, this question does require
+prior knowledge as well. But people who are interested should have
+some advantages; right?</p>
+<p>Question 4:</p>
+<p>This question was indeed a tough one. <a href="http://www.yeban.in">Anurag</a> came up with it. The question has many answers. Maybe I will ask him 
+to come up with his own some day. For now, you are stuck with my version of it. So here goes.</p>
+<p>One way is to fetch different kinds of data from different fine-tuned servers (think Content Delivery Networks). For
+example, images could be fetched from a server running Nginx which is one of the fastest static content servers
+I have seen. Also, some form of load-balancing server could be used to distribute the load across multiple servers.
+This answers both the cases of scalability and optimisation.</p>
+<p>Another method could be to use redundant data-servers across diverse geographical locations.</p>
+                </div>
+            </div>
+            <hr>
+
+            <div id="footer" class="footer">
+                <a href="" class="left footlink"></a>
+                <a href="page-2" class="right footlink">older</a>
+            </div>
         </div>
     </body>
 </html>
