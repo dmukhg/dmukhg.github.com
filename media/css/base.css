@@ -105,3 +105,13 @@ a:hover {
 a:visited {
     color: #336620;
 }
+
+.inline_code {
+    display: inline-block;
+    background: #eeeeee;
+    font-family: monospace;
+    font-size: 10pt;
+    padding-right: 4px;
+    padding-left: 4px;
+    border-radius: 3px;
+}
