@@ -21,19 +21,34 @@
             
             <div id="post" class="post">
                 <a href="/archive/4.html" class="post-title">Refactoring Java, Yuck.</a>
-                <span class="post-date">May, 2011</span>
+                <span class="post-date">Jun, 2011</span>
                 <div id="post-contents" class="post-contents">
                     <p><a href="http://paulgraham.com/">Paul Graham</a> very rightly says, a programming language should be
 malleable. It should allow you to quickly prototype a project and then
 beat the code into shape. </p>
 <p>Static typing, like in java, is prohibitive of this approach. Another 
-bureaucratic feature I could do without is interfaces. Sure, they 
-solve a lot of problems. But I would say duck typing is a better way to go.</p>
+feature I feel is unnecessarily bureaucratic : interfaces. Interfaces sound
+too good to be true. They smell a lot like modularity and it is remarkable how if
+used correctly, they can lead to highly decoupled code. But interfaces also
+hide a lot of data. The actual implementation code may contain substantial information
+that is inaccessible to outside code. </p>
+<p>The more I program in Java, the more I feel it spends more time preventing 
+me from doing things, than helping me out. In a way, you turn out to be your own
+"pointy-haired-boss". First, the PHB in you writes the interface. Then the 
+employee in you starts writing an implementation based on the guidelines laid
+down by the PHB. Once this is done, you both are happy until there arises a requirement
+for some more features that this interface doesn't support. You send a a 
+request to PHB, he writes more of the interface and the employee in you writes
+more code to implement the interface and this cycle continues.</p>
 <p>I am writing a RIA in <a href="http://webtoolkit.googlecode.com/">GWT</a>. I am trying to adhere to the design patterns 
 laid out in the documentation. Sometimes, in the spirit of the code, just
 to make something work, I tend to step out of the design pattern and code
 arbitrarily. Now, when I have to refactor the code to align it to the pattern,
 I find myself terrified of the effort it would take to acheive that.</p>
+<p>Having been on Java for about 3 months, when I try to write python
+code, I find myself thinking in Java. I find the lack of types and interfaces
+difficult to manage. I am writing up non-pythonic reflection based systems to
+implement features similar to interfaces and type-checking in java. </p>
 <p>Python, I shall see you soon, and when I do...</p>
                 </div>
             </div>
