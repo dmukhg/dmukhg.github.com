@@ -5,6 +5,13 @@ body {
     font-size: 11pt;
 }
 
+h2 {
+    font-size: 12pt;
+    color: #0B3624;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 hr {
     border: 1px solid #DEEDD3;
 }
@@ -35,7 +42,7 @@ div.directors {
 }
 
 a.homelink {
-    color: #1F3B29;
+    color: #1f3b29;
     font-size: 12pt;
     font-weight: bold;
     text-decoration: none;
@@ -79,7 +86,7 @@ div.post-contents {
 }
 
 a.post-title {
-    font-size: 12pt;
+    font-size: 13pt;
     color: #589E29;
     font-weight: bold;
     text-decoration: none;
