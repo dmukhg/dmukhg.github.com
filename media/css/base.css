@@ -6,8 +6,8 @@ body {
 }
 
 h2 {
-    font-size: 12pt;
-    color: #0B3624;
+    font-size: 13pt;
+    color: #0B5824;
     font-weight: bold;
     text-decoration: none;
 }
@@ -43,7 +43,7 @@ div.directors {
 
 a.homelink {
     color: #1f3b29;
-    font-size: 12pt;
+    font-size: 1:pt;
     font-weight: bold;
     text-decoration: none;
 }
@@ -86,7 +86,7 @@ div.post-contents {
 }
 
 a.post-title {
-    font-size: 13pt;
+    font-size: 14pt;
     color: #589E29;
     font-weight: bold;
     text-decoration: none;
