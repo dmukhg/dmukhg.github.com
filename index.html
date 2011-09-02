@@ -22,6 +22,21 @@
             <hr class="deepbottom">
             
             <div id="post" class="post">
+                    <a href="/archive/5.html" class="post-title">Simple Interest, very simple</a>
+
+                <span class="post-date">September, 2011</span>
+                <div id="post-contents" class="post-contents">
+                    <p>On a very recent chai-coffee induced chat with <a href="http://artagnon.com">Ram</a>, I discovered
+the origin of the word 'interest' as used by banks and other lending
+entities. </p>
+<p>Interest is the incentive you get for putting your money in a bank
+account or for lending your money out. It is your interest in that
+action. This may seem trivial but it seemed like a Eureka moment to
+me. </p>
+                </div>
+            </div>
+            <hr class="deepbottom">
+            <div id="post" class="post">
                     <a href="/archive/4.html" class="post-title">Refactoring Java, not again!</a>
 
                 <span class="post-date">Jun, 2011</span>
@@ -117,56 +132,6 @@ number 68 reads:</p><div class="highlight"><pre><span class="n">uri</span><span 
 your case. You can possibly do this better with splitting the string
 and joining. But hey, I said it was dirty. </p>
 <p>Happy coding.</p>
-                </div>
-            </div>
-            <hr class="deepbottom">
-            <div id="post" class="post">
-                    <a href="/archive/2.html" class="post-title">WebDev Selection Test</a>
-
-                <span class="post-date">October, 2010</span>
-                <div id="post-contents" class="post-contents">
-                    <p>I had to select a few developers to work with me at developing the <a href="http://www.ecell-iitkgp.org">ecell website</a> further. 
-There are many loose ends to tie up. However, working out a selection procedure was in itself
-a mammoth task. I had to try to keep the technicalities to a minimum, focus on logic and interest, 
-both of which are difficult to cardinalize. I came up with a solution, with help from Sid who selected
-me in my first year. Test them on fundamentals which are not bound to any language/framework in particular.
-Logical tests and some database concepts. The common element in all these would-be questions was that they
-had left me amazed when I discovered the answers. </p>
-<p>Here is the paper.</p>
-<iframe width=100% height=560px frameborder=0 src=https://docs.google.com/gview?a=v&pid=explorer&chrome=false&api=true&embedded=true&srcid=0BxG0waWYlVh4YjlhZGMxZDktYTQ1Mi00MDZlLTk5MGQtNDg3OWY4ZWI4YjM1&hl=en></iframe>
-
-<h2>Discussion:</h2>
-<p>Question 1:</p>
-<p>Concentrating on the relationship between the books and authors is the key point in this question.
-In one particular solution, there are 3 tables. One representing the authors. another for the books
-and a third one for the relationship. This table is often called a linker table.</p>
-<img src="/media/im/web-selections-db.png">
-
-<p>As is clearly visible, the linker table takes the pk (primary key:a unique identifier) of a book and 
-a pk of the author and connects the two in a manner which limits the number of columns : A key requirement
-in a database schema.</p>
-<p>Question 2:</p>
-<p>The flaw in this code snippet is that the /astra url will never be reached. This is because the line
-immediately above it captures all urls which begin with /a (including /astra) and the control never reaches 
-the /astra line. One way to circumvent this is to swap the two lines. This way, the condition is avoided.</p>
-<p>Question 3:</p>
-<p>We could use javascript to preload the images. This is the easy way out and works most of the time. I agree this
-involves prior knowledge of this feature. But infact, there is another way : Sprites.
-Assume you have the case as mentioned in the question. A rollover button. You have one image. When you move the mouse
-over the image, it changes. Assume the images are both 40x20 in size. Now you can compose an image of 40x40 size 
-containing both the images in two halves. Then using the CSS property of background-position, you can easily shift the image
-at the required event. This is a sure-shot method since there is only one image and will have been downloaded completely
-if it is being displayed at all. I agree, this question does require
-prior knowledge as well. But people who are interested should have
-some advantages; right?</p>
-<p>Question 4:</p>
-<p>This question was indeed a tough one. <a href="http://www.yeban.in">Anurag</a> came up with it. The question has many answers. Maybe I will ask him 
-to come up with his own some day. For now, you are stuck with my version of it. So here goes.</p>
-<p>One way is to fetch different kinds of data from different fine-tuned servers (think Content Delivery Networks). For
-example, images could be fetched from a server running Nginx which is one of the fastest static content servers
-I have seen. Also, some form of load-balancing server could be used to distribute the load across multiple servers.
-This answers both the cases of scalability and optimisation.</p>
-<p>Another method could be to use redundant data-servers across diverse geographical locations.</p>
                 </div>
             </div>
             <hr class="deepbottom">
