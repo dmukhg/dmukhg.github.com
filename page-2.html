@@ -23,6 +23,68 @@
             <hr class="deepbottom">
             
             <div id="post" class="post">
+                    <a href="/archive/3.html" class="post-title">A simple proxy servlet for GWT devmode</a>
+
+                <span class="post-date">May, 2011</span>
+                <div id="post-contents" class="post-contents">
+                    <p>Disclosure: The source code and some other ideas are from one of 
+<a href="http://kennethjorgensen.com/blog/2010/04/12/proxy-servlet-for-gwt-in-devmode/">Kenneth Jorgensen's blog post</a></p>
+<p>As you start developing with the Google Web Toolkit, you may find yourself
+stuck because of the <a href="http://en.wikipedia.org/wiki/Same_origin_policy">"Same Origin Policy"</a> restrictions that browser
+developers have implemented. </p>
+<p>The SOP restricts scripts running on the browser from placing
+XmlHTTPRequests to hosts other than the host from which the current page 
+was requested. This is a short, possibly imprecise definition. What really
+matters is that if you develop your server-side API in a language other than
+Java, you will have trouble accessing that API while in devmode.</p>
+<p>What you can do is, use a language-agnostic servlet that runs on the GWT 
+development mode server and proxies your requests to another server.<br />
+</p>
+<p>I won't dump the entire java servlet file here. You can find a link
+<a href="/media/resources/ProxyServlet.java">here</a>. There is a dirty hack in the servlet; I describe it later. </p>
+<p>To make this work, you have to edit the web.xml file within the
+WEB-INF directory within the war directory not the *.gwt.xml file.
+As far as I understand, (I am a noob to GWT) the *.gwt.xml file is
+to be updated with the details of a servlet when you use GWT-RPC.</p>
+<p>Here is a snapshot of my web.xml.</p><div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="cp">&lt;!DOCTYPE web-app</span>
+<span class="cp">    PUBLIC &quot;-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN&quot;</span>
+<span class="cp">    &quot;http://java.sun.com/dtd/web-app_2_3.dtd&quot;&gt;</span>
+
+<span class="nt">&lt;web-app&gt;</span>
+    <span class="nt">&lt;servlet&gt;</span>
+        <span class="nt">&lt;servlet-name&gt;</span>proxy<span class="nt">&lt;/servlet-name&gt;</span>
+        <span class="nt">&lt;servlet-class&gt;</span>in.dmulog.gwt.ProxyServlet<span class="nt">&lt;/servlet-class&gt;</span>
+    <span class="nt">&lt;/servlet&gt;</span>
+    <span class="nt">&lt;servlet-mapping&gt;</span>
+        <span class="nt">&lt;servlet-name&gt;</span>proxy<span class="nt">&lt;/servlet-name&gt;</span>
+        <span class="nt">&lt;url-pattern&gt;</span>/proxy/*<span class="nt">&lt;/url-pattern&gt;</span>
+    <span class="nt">&lt;/servlet-mapping&gt;</span>
+    <span class="c">&lt;!-- Default page to serve --&gt;</span>
+    <span class="nt">&lt;welcome-file-list&gt;</span>
+        <span class="nt">&lt;welcome-file&gt;</span>Client.html<span class="nt">&lt;/welcome-file&gt;</span>
+    <span class="nt">&lt;/welcome-file-list&gt;</span>
+<span class="nt">&lt;/web-app&gt;</span>
+</pre></div>
+<p>Now, if you update the code according to your own setup, any
+requests at <span class="inline_code">localhost:8888/proxy/this/uri</span> will be forwarded to
+<span class="inline_code">localhost:8000/this/uri</span>. Or as the case may be. You can define all
+this in the java servlet file. </p>
+<p>Now about the dirty hack I talked about. Within the java file, line
+number 68 reads:</p><div class="highlight"><pre><span class="n">uri</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">req</span><span class="o">.</span><span class="na">getRequestURI</span><span class="o">().</span><span class="na">substring</span><span class="o">(</span><span class="mi">6</span><span class="o">));</span>
+</pre></div>
+<p>What the substring part does is converts
+<span class="inline_code">localhost:8888/proxy/foo/bar/baz</span> to a request to
+<span class="inline_code">localhost:8000/foo/bar/baz</span>. </p>
+<p>If we don't use the substring hack, it remains as a request to
+<span class="inline_code">localhost:8000/<strong>proxy</strong>/foo/bar/baz</span> which might not be useful in
+your case. You can possibly do this better with splitting the string
+and joining. But hey, I said it was dirty. </p>
+<p>Happy coding.</p>
+                </div>
+            </div>
+            <hr class="deepbottom">
+            <div id="post" class="post">
                     <a href="/archive/2.html" class="post-title">WebDev Selection Test</a>
 
                 <span class="post-date">October, 2010</span>
@@ -125,14 +187,15 @@ into your ~/.bashrc or ~/.zshrc. It works fine on my zsh. Should work like wise 
 
 
             <div id="footer" class="footer">
-                <span class="foot-notice">&copy; 2011 Dipanjan
-                    Mukherjee.
+                <span class="foot-notice">
+                  <a rel="license"
+                    href="http://creativecommons.org/licenses/by-sa/3.0/"><img
+                    alt="Creative Commons License"
+                    style="border-width:0"
+                    src="http://i.creativecommons.org/l/by-sa/3.0/80x15.png"
+                    /></a>
                 </span>
                 <span class="foot-notice">
-                    &nbsp;&nbsp;|&nbsp;&nbsp;
-                </span>
-                <span class="foot-notice">
-                    If only, life could be on version control..
                 </span>
             </div>
         </div>

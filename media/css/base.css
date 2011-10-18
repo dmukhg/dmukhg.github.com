@@ -5,6 +5,13 @@ body {
     font-size: 12pt;
 }
 
+img {
+  margin-left: auto;
+  margin-right: auto;
+  clear: both;
+  float: none;
+}
+
 h2 {
     font-size: 13pt;
     color: #0B5824;
