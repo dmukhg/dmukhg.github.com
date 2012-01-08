@@ -25,6 +25,53 @@
             <hr class="deepbottom">
             
             <div id="post" class="post">
+                    <a href="/archive/4.html" class="post-title">Refactoring Java, not again!</a>
+
+                <span class="post-date">Jun, 2011</span>
+                <div id="post-contents" class="post-contents">
+                    <p><a href="http://paulgraham.com/">Paul Graham</a> very rightly says, a programming language should be
+malleable. It should allow you to quickly prototype a project and then
+beat the code into shape. </p>
+<p>Static typing, like in java, is prohibitive of this approach. Another 
+feature I feel is unnecessarily bureaucratic : interfaces. Interfaces 
+sound too good to be true. They smell a lot like modularity and it is
+remarkable how if used correctly, they can lead to highly decoupled 
+code. But interfaces also hide a lot of data. The actual implementation 
+may contain substantial information that is inaccessible to outside 
+code. </p>
+<p>The more I program in Java, the more I feel it spends more time preventing 
+me from doing things, than helping me out. In a way, you turn out to be 
+your own "pointy-haired-boss". First, the PHB in you writes the interface. 
+Then the employee in you starts writing an implementation based on the 
+guidelines laid down by the PHB. Once this is done, you both are happy 
+until there arises a requirement for some more features that this interface
+doesn't support. You send a request to PHB, he writes more of the interface 
+and the employee in you writes more code to implement the interface and this 
+cycle continues.</p>
+<p>I am writing a RIA in <a href="http://webtoolkit.googlecode.com/">GWT</a>. I am trying to adhere to the design patterns 
+laid out in the documentation. Sometimes, in the spirit of the code, just
+to make something work, I tend to step out of the design pattern and code
+arbitrarily. Now, when I have to refactor the code to align it to the pattern,
+I find myself terrified of the effort it would take to acheive that.</p>
+<p>Having been on Java for about 3 months, when I try to write python
+code, I find myself thinking in Java. I find the lack of types and interfaces
+difficult to manage. I am writing up un-pythonic reflection based systems to
+implement features similar to interfaces and type-checking in java. </p>
+<p>Python, I shall see you soon, and when I do...</p>
+                </div>
+                <a name="comments">
+            </div>
+              <!-- Disqus count -->
+              <a href="/archive/4.html#disqus_thread"
+                class="disqus-comment-count">retrieving comment count</a>
+              <!-- End Disqus count -->
+
+              <a href="/archive/4.html#comments"
+                class="leave-comment">leave a
+                comment</a>
+
+            <hr class="deepbottom">
+            <div id="post" class="post">
                     <a href="/archive/3.html" class="post-title">A simple proxy servlet for GWT devmode</a>
 
                 <span class="post-date">May, 2011</span>
@@ -84,11 +131,16 @@ your case. You can possibly do this better with splitting the string
 and joining. But hey, I said it was dirty. </p>
 <p>Happy coding.</p>
                 </div>
+                <a name="comments">
             </div>
               <!-- Disqus count -->
               <a href="/archive/3.html#disqus_thread"
                 class="disqus-comment-count">retrieving comment count</a>
               <!-- End Disqus count -->
+
+              <a href="/archive/3.html#comments"
+                class="leave-comment">leave a
+                comment</a>
 
             <hr class="deepbottom">
             <div id="post" class="post">
@@ -139,67 +191,22 @@ I have seen. Also, some form of load-balancing server could be used to distribut
 This answers both the cases of scalability and optimisation.</p>
 <p>Another method could be to use redundant data-servers across diverse geographical locations.</p>
                 </div>
+                <a name="comments">
             </div>
               <!-- Disqus count -->
               <a href="/archive/2.html#disqus_thread"
                 class="disqus-comment-count">retrieving comment count</a>
               <!-- End Disqus count -->
 
-            <hr class="deepbottom">
-            <div id="post" class="post">
-                    <a href="/archive/1.html" class="post-title">MarkDir : persistence in terminals without multiplexers or tabs</a>
-
-                <span class="post-date">September, 2010</span>
-                <div id="post-contents" class="post-contents">
-                    <p>This post describes how you can open new terminals which are already on a directory of your choice.</p>
-<p>I use the <a href="http://www.vim.org">Vim</a> text editor. But I find the keybindings for its multiple windows quite cumbersome.
-Also, I use the <a href="http://awesome.naquadah.org">awesome</a> window manager. Opening terminals in this wm is incredibly easy. Often, 
-I use multiple terminal windows to edit code at the same time. To save me from having to keep cd-ing 
-into my projects over and over again, I wrote this "tiny" shell function.</p><div class="highlight"><pre><span class="c"># ===================== Mark functions =======================</span>
-<span class="c"># calling mark, sets up a file ~/.mark_dir containing</span>
-<span class="c"># the value of the current directory</span>
-<span class="c"># hence forth, any terminal you open will be directed to this</span>
-<span class="c"># directory</span>
-<span class="k">function </span>m<span class="o">(){</span>
-    <span class="nb">printf</span> <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span> &gt; ~/.mark_dir
-    <span class="nb">echo</span> <span class="s1">&#39;Directory Marked&#39;</span>
-<span class="o">}</span>
-<span class="c"># to turn this off, call unmark or call mark on some other directory</span>
-<span class="c"># unmark resets mark_dir to the home directory and also places you at ~</span>
-<span class="k">function </span>u<span class="o">(){</span>
-    <span class="nb">printf</span> ~ &gt; ~/.mark_dir
-    <span class="nb">echo</span> <span class="s1">&#39;Directory Marked Reset to home&#39;</span>
-    <span class="nb">cd</span> ~
-<span class="o">}</span>
-<span class="nb">read </span>MARKDIR &lt; ~/.mark_dir
-<span class="nb">cd</span> <span class="nv">$MARKDIR</span>
-
-<span class="c"># ===================== End Mark functions ===================</span>
-</pre></div>
-<p>The comments are self explanatory. If you are not feeling like reading code, just paste this code
-into your ~/.bashrc or ~/.zshrc. It works fine on my zsh. Should work like wise on any other shell.</p>
-<p>Quick Walkthrough</p>
-<ol>
-<li>type "touch ~/.mark_dir" at the terminal. You need to do this only
-    the first time you install the shell function.</li>
-<li>when you are at your project dir, just enter 'm' at the terminal. this
-    will mark this directory and cd into it every time you open a new terminal</li>
-<li>if you are done with this project, just type 'u'. This will remove
-    the directory marker and take you to the home directory as well.</li>
-</ol>
-<p>Nifty, right?</p>
-                </div>
-            </div>
-              <!-- Disqus count -->
-              <a href="/archive/1.html#disqus_thread"
-                class="disqus-comment-count">retrieving comment count</a>
-              <!-- End Disqus count -->
+              <a href="/archive/2.html#comments"
+                class="leave-comment">leave a
+                comment</a>
 
             <hr class="deepbottom">
 
             <div id="directors" class="directors">
                 <a href="index" class="left footlink">newer</a>
-                <a href="" class="right footlink"></a>
+                <a href="page-3" class="right footlink">older</a>
             </div>
 
 

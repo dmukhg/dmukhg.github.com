@@ -146,3 +146,8 @@ a:visited {
     padding-top: 20px;
     margin-bottom: 20px;
 }
+
+a.leave-comment {
+  float: right;
+  font-size: 0.9em;
+}
