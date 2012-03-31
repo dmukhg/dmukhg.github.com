@@ -2,12 +2,12 @@
 layout: post
 title: Resume | Dipanjan Mukherjee
 ---
+
 [dipanjan.mu@gmail.com][4] | [http://dmulog.in][1]
 
 
-<div style="font-size: 0.8em">
 ## Summary 
-I am a self-taught programmer.  I have strong background in engineering software from the ground up, with a keen eye towards **usability**.<br>
+I am a self-taught programmer.  I have strong background in engineering software from the ground up, with a keen eye towards **usability**.
 
 ## Work Experience
 **G-Node, INCF at LMU, Munich | Developer** <span class="post-date">December 2011 - January 2012</span>
@@ -46,7 +46,6 @@ Currently enrolled in a B.Tech in Mechanical Engineering at the Indian Institute
 Expected Graduation : 2013
 
 [*PDF VERSION*][5] 
-</div>
 
 [1]: http://dmulog.in
 [2]: http://code.google.com/p/google-web-toolkit/
