@@ -99,8 +99,19 @@ div#footer ul li {
   line-height: 1.7em;
 }
 
+div#post h3 {
+  display: block;
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-family: 'Georgia', georgia, serif;
+  font-style: italic;
+  color: #C71818;
+}
+
 div#post p {
   line-height: 1.5em;
   font-size: 1em;
   margin-top: 20px;
+  text-align: justify;
 }
