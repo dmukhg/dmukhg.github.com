@@ -1,0 +1,14 @@
+---
+layout: default
+title: dmulog.in | Dipanjan Mukherjee
+---
+<h1>Blog Posts</h1>
+<ul class="index">
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+
+    <p>{{ post.snip }}</p>
+  </li>
+  {% endfor %}
+</ul>
