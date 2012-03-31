@@ -101,7 +101,9 @@ div#footer ul li {
 
 div#post h3 {
   display: block;
-  margin-top: 30px;
+  margin-top: 20px;
+  position: relative;
+  left: -5px;
   text-decoration: none;
   font-size: 1.5em;
   font-family: 'Georgia', georgia, serif;
@@ -118,6 +120,7 @@ div#post p {
 
 div#related {
   margin-top: 30px;
+  padding-top: 10px;
   border-top: 1px solid #aaaaaa;
   width: 60%;
 }
@@ -134,7 +137,6 @@ div#related ul {
 
 div#related a {
   font-size: 1.0em;
-  font-family: 'Georgia', georgia, serif;
   text-decoration: none;
   color: #296494;
 }
