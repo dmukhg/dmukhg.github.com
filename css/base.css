@@ -98,3 +98,9 @@ div#footer ul li {
   list-style-type: none;
   line-height: 1.7em;
 }
+
+div#post p {
+  line-height: 1.5em;
+  font-size: 1em;
+  margin-top: 20px;
+}
