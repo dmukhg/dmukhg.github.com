@@ -53,7 +53,7 @@ Expected Graduation : 2013
 [2]: http://code.google.com/p/google-web-toolkit/
 [3]: http://www.reportlab.com
 [4]: mailto:dipanjan.mu@gmail.com
-[5]: http://dmulog.in/media/resources/resume_Dipanjan_Mukherjee.pdf
+[5]: http://dmulog.in/images/resume_Dipanjan_Mukherjee.pdf
 [6]: http://github.com/INCF/WDAT
 [7]: http://www.g-node.org/
 [8]: https://github.com/G-Node/crayon/
