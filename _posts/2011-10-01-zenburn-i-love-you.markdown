@@ -8,7 +8,7 @@ snip: Zenburn is a colorscheme available on vim and other editors.  This post de
 
 I am a vim user.  [Leo][1] was my choice of a colorscheme.  It offers quite a palette of well-balanced colours.  Contrast is adequately high while on a laptop.
 
-<img align="center" src="/media/im/leo_screen.png" alt="Ruby code on leo"/>
+<img align="center" src="/images/leo_screen.png" alt="Ruby code on leo"/>
 
 ^LEO
 
@@ -16,7 +16,7 @@ When I switched to a desktop, I spent substantial time trying to figure out the 
 
 I don't recall how I came across you, [zenburn][2], but my eyes are thankful that I did.  You make my background a lighter shade of grey and use a subtle palette of pastel colours.  The lowered contrast enables me to take code in for longer hours.  What would I do without you!
 
-<img align=center src="/media/im/zenburn_screen.png" alt="Ruby code on zenburn"/>
+<img align=center src="/images/zenburn_screen.png" alt="Ruby code on zenburn"/>
 
 ^Zenburn 
 
