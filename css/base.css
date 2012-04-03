@@ -2,6 +2,16 @@ body {
   font-family: 'Open Sans', helvetica, sans;
 }
 
+a {
+  text-decoration: none;
+  color: #1F5DAD;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #AD581F;
+}
+
 strong {
   font-weight: bold;
 }
