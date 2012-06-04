@@ -6,14 +6,15 @@ snip: A theoretical exploration of evolutionary and psychological reasons justif
 
 ###{{ page.title }}
 
-Most of our primary responses, as humans, can be attributed to evolution.  We react peculiarly to stimuli because they enhance our chances of survival: both as individuals and as a species.  We find babies cute because it makes us protective of our young.  Similarly, when we hear exceedingly loud explosions, we duck first and **then** look back.
+Our instinctive responses, as humans, can usually be explained as having evolutionary advantages.  We react peculiarly to situations and stimuli because our reactions enhance our chances of survival, both as individuals and as species.  For example, most people find babies cute universally.  This makes us protective of our young.  To be noted here, is the fact that finding babies cute is not a rational decision.  It is on a subconscious, instinctive level.
 
-What, then, could be the reason we find beauty beautiful?  We know beauty is a primeval response.  We don't have rational control over it.  We find beauty in more than just other humans.   Repeating patterns, complementary colours,  clean design, italicised serif fonts, natural landforms and we could go on and on. 
+I find it natural to conclude from this and other such examples that beauty is "experienced" or realized on a subconscious, instinctive level.  Although this instinct may be conditioned from years of cultural exposure and some level of personal predisposition, mostly, there is a consensus on what is beautiful and what isn't.  There might be some underlying universal algorithm which is operative in our realization of beauty and that this algorithm also factors in one's predisposition and culture.
 
-I will now lead you to [this video][1] which explains, via a rather entertaining animation sequence, the Darwinian concept of beauty.  One of the features of the theory says that meticulous workmanship is beautiful because it is an indicator of fine motor control which is a preferable quality in the progression of a species.  Natural landscapes which resemble the habitat that our predecessors evolved in are often considered beautiful.  The presence of a path in any photograph/painting makes it so much more aesthetically pleasing because it indicates the presence of humans.
+I will now lead you to [this video][1] which explains, via a rather entertaining animation sequence, the Darwinian concept of beauty.   Natural landscapes which resemble the habitat that our (evolutionary) predecessors evolved in are often considered beautiful.  The presence of a path in any photograph/painting makes it so much more aesthetically pleasing because it indicates the presence of humans.
 
-My interest, however, is in why and how we find some web-pages particularly beautiful.  There are no evolutionary contemporaries of web-pages I am sure, so why do we find some pages pleasing?
+My interest, however, is in why and how we find some web-pages particularly beautiful.  How can we explain beauty in web pages?  One of the examples of the theory says that meticulous workmanship is beautiful because it is an indicator of fine motor control which is a preferable quality in the progression of a species.  Could that be a probable justification for finely tuned serif-fonts look so great in some pages?   
 
+On talking to some of my peers about this, 
 To be continued...  
 
 [1]: http://www.youtube.com/watch?v=PktUzdnBqWI
