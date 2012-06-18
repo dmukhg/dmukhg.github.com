@@ -10,7 +10,7 @@ I think our instinctive responses, as humans, can usually be explained by their 
 
 I find it natural to conclude from this and other such examples that beauty is "experienced" or realized on a subconscious, instinctive level.  Although this instinct may be conditioned from years of cultural exposure and some level of personal predisposition, mostly, there is a consensus on what is beautiful and what isn't.  There might be some underlying universal algorithm which is operative in our realization of beauty and that this algorithm also factors in one's predisposition and culture.
 
-I will now lead you to [this video][1] which explains, via a rather entertaining animation sequence, the Darwinian concept of beauty.   You will see that natural landscapes which resemble the habitat that our (evolutionary) predecessors evolved in are often considered beautiful.  The presence of a path in any photograph/painting makes it so much more aesthetically pleasing because it indicates the presence of humans.  This indication, however, is not processed by rationalising.  Like the babies-are-cute universality, this is a subconscious response.
+I will now lead you to [this video][1] which explains, via a rather entertaining animation sequence, the Darwinian concept of beauty.   You will see that natural landscapes which resemble the habitat that our (evolutionary) predecessors evolved in, are often considered beautiful.  The presence of a path in any photograph/painting makes it so much more aesthetically pleasing because it indicates the presence of humans.  This indication, however, is not processed by rationalising.  Like the babies-are-cute universality, this is a subconscious response.
 
 My interest, however, is in why and how we find some web-pages particularly beautiful.  How can we explain beauty in web pages?  One of the examples of the darwininan theory says that meticulous workmanship is beautiful because it is an indicator of fine motor control: an attribute that is preferable for the progression of a species.  Could that be a probable justification for finely tuned serif-fonts looking so pleasing in some pages?   
 
@@ -20,7 +20,7 @@ While discussing these observations with some friends, a probable explanation ca
 
 Serif fonts have heavy detailing.  While reading paragraphs, your immediate field of view is concentrated around the text you are reading.  This is too little information in itself and probably excites a minute portion of your brain.  Now, the extra detailing in serif fonts compensates and brings brain activity to *that* optimum level, where it is mildly pleasing.
 
-Similarly, when in a high information-density context such as an infographic, your brain is pretty much being kept entertained by the sheer amount of information passing through.  Sans-serif fonts unobstrusively preseng information to your reasonably busy brain and hence maintain *the* activity level. 
+Similarly, when in a high information-density context such as an infographic, your brain is pretty much being kept entertained by the sheer amount of information passing through.  Sans-serif fonts unobstrusively present information to your reasonably busy brain and hence maintain *the* activity level. 
 
 Humanist typefaces have low detailing. Nevertheless, I find the variation in stroke thickness and the shapes in some way involving.  Involving enough to distract the brain while the low-information-density words are read.
 
