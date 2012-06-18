@@ -12,9 +12,9 @@ I am a self-taught programmer.  I have strong background in engineering software
 
 ### Work Experience
 
-**G-Node, INCF at LMU, Munich | Developer** | December 2011 - January 2012
+**G-Node, INCF at LMU, Munich | Developer** | December 2011 - present 
 
-Wrote a javascript profiling tool and tests using it to benchmark web-plotting libraries.  Wrote a Javascript [library][8] using the SVG API and [d3][9] for plotting of multiple time-series in a dynamic and event driven architecture.
+Wrote a javascript profiling tool and tests using it to benchmark web-plotting libraries.  Wrote a Javascript [library][8] using the SVG API and [d3][9] for plotting of multiple time-series in a dynamic and event driven architecture.  Working on a rich-internet-application that manages and displays electrophysiological experimental data and metadata.
 
 **International Neuroinformatics Coordinating Facility | Student Developer** Summer 2011
 
