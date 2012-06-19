@@ -113,7 +113,7 @@ div#footer ul li {
   line-height: 1.7em;
 }
 
-div#post h3 {
+div#post h1 {
   display: block;
   margin-top: 20px;
   position: relative;
@@ -125,10 +125,19 @@ div#post h3 {
   color: #C71818;
 }
 
+div#post h2 {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-family: 'Georgia', georgia, serif;
+  color: #2E8726;
+}
+
 div#post p {
   line-height: 1.5em;
   font-size: 1em;
-  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: justify;
 }
 
