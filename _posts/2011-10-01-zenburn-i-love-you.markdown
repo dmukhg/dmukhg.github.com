@@ -4,7 +4,8 @@ title: Zenburn, I love you..
 snip: Zenburn is a colorscheme available on vim and other editors.  This post describes why I find it one of the best ones around and how it makes me a better programmer.
 ---
 
-###{{ page.title }}
+{{ page.title }}
+===
 
 I am a vim user.  [Leo][1] was my choice of a colorscheme.  It offers quite a palette of well-balanced colours.  Contrast is adequately high while on a laptop.  Also, it is easy to make out the colours from one another.  Within mere days of using it, the semantic information conveyed by the colours made sense without any conscious thought. 
 
