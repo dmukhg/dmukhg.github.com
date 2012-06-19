@@ -116,6 +116,7 @@ div#footer ul li {
 div#post h1 {
   display: block;
   margin-top: 20px;
+  margin-bottom: 10px;
   position: relative;
   left: -5px;
   text-decoration: none;
@@ -128,6 +129,7 @@ div#post h1 {
 div#post h2 {
   display: block;
   margin-top: 20px;
+  margin-bottom: 10px;
   text-decoration: none;
   font-size: 1.3em;
   font-family: 'Georgia', georgia, serif;
@@ -137,7 +139,8 @@ div#post h2 {
 div#post p {
   line-height: 1.5em;
   font-size: 1em;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: justify;
 }
 
