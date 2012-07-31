@@ -148,6 +148,9 @@ div#post p {
   text-align: justify;
 }
 
+div#post em {
+  font-style: italic;
+}
 div#related {
   margin-top: 30px;
   padding-top: 10px;
