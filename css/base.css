@@ -82,6 +82,10 @@ ul.index li a:visited {
   color: #8B54AB;
 }
 
+ul.index li a:visited:hover {
+  color: #E0841B;
+}
+
 ul.index li p {
   line-height: 1.5em;
   font-size: 1em;
