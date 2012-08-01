@@ -35,5 +35,9 @@ Here are the steps that my 'bootstrap' script now needs to execute in order:
 - Activate the above virtualenv
 - Install the dependencies for the app, as declared in the requirements.txt file to the virtualenv
 
+The script below does all the necessary work and also supports a 'dependencies' argument which installs only the dependencies.  It is recommended that the virtualenv.py file is included in the same directory so that it isn't another pre-requirement on the developer's machine.
+
+<script src="https://gist.github.com/3230166.js?file=bootstrap.py"></script>
+
 [1]: http://www.12factor.net/
 [2]: http://nvie.com/posts/a-successful-git-branching-model/
