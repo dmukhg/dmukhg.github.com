@@ -186,3 +186,7 @@ div#related a:hover {
   color: #912929;
 }
 
+div.gist {
+  font-size: 12px;
+  line-height: 1.4em;
+}
