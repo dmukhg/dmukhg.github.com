@@ -39,5 +39,25 @@ The script below does all the necessary work and also supports a 'dependencies' 
 
 <script src="https://gist.github.com/3230166.js?file=bootstrap.py"></script>
 
+## 3. Configuration
+
+*Store config in the environment*
+
+Part of this is already done in the previous script.  The enviroment variables are stored in the activation script for the virtualenv.  Clearly, to start using this virtualenv, the activate script must be called which in turn will ensure that the proper env variables will be set.
+
+The premise behind storing configuration in the environment is that a single codebase can easily be deployed on a variety of environments without changing the code.
+
+The part that now remains is parsing the same environment variables and making them available in the settings.py file.  The method for implementing this is very explained in detail on [wellfire interactive's blog][3].  I will just skim through the basics here, and would recommend that you read the original post for completeness.
+
+Parsing the environment variables is as simple as editing your settings.py file.  Just replace all the config variables with something like 
+```python
+DEBUG = bool(os.environ.get('DJ_DEBUG'))
+
+DATABASE_ENGINE = str(os.environ.get('DJ_DATABASE_ENGINE'))
+```
+
+With some useful runtime checks in place, this should solve the configuration problem easily and you are one step closer to acheiving 12Factor goodness. 
+
 [1]: http://www.12factor.net/
 [2]: http://nvie.com/posts/a-successful-git-branching-model/
+[3]: http://www.wellfireinteractive.com/blog/easier-12-factor-django/
