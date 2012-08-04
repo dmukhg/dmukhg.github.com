@@ -50,11 +50,8 @@ The premise behind storing configuration in the environment is that a single cod
 The part that now remains is parsing the same environment variables and making them available in the settings.py file.  The method for implementing this is very explained in detail on [wellfire interactive's blog][3].  I will just skim through the basics here, and would recommend that you read the original post for completeness.
 
 Parsing the environment variables is as simple as editing your settings.py file.  Just replace all the config variables with something like 
-```python
-DEBUG = bool(os.environ.get('DJ_DEBUG'))
 
-DATABASE_ENGINE = str(os.environ.get('DJ_DATABASE_ENGINE'))
-```
+<script src="https://gist.github.com/3259492.js?file=settings.py"></script>
 
 With some useful runtime checks in place, this should solve the configuration problem easily and you are one step closer to acheiving 12Factor goodness. 
 
