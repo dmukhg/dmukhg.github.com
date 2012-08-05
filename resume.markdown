@@ -6,11 +6,11 @@ title: Resume | Dipanjan Mukherjee
 [dipanjan.mu@gmail.com][4] | [http://dmulog.in][1]
 
 
-### Summary 
+## Summary 
 
 I am a self-taught programmer.  I have strong background in engineering software from the ground up, with a keen eye towards **usability**.
 
-### Work Experience
+## Work Experience
 
 **G-Node, INCF at LMU, Munich | Developer** | December 2011 - present 
 
@@ -39,10 +39,10 @@ tackled various **DNS and System Administration tasks**.
 
 Developed a **visual-report generating** application using [ReportLab][3].  The application had a plugin-oriented data-entry interface. 
 
-### Proficiencies
+## Proficiencies
 Javascript (non-trivial), Python, Java, C (in decreasing order of experience).  I have a strong grasp of the web-development lifecycle.  I have experience with both backend and frontend development.  Usability and simplicity are key stress points in my approach.
 
-### Education
+## Education
 Currently enrolled in a B.Tech in Mechanical Engineering at the Indian Institute of Technology, Kharagpur
 
 Expected Graduation : 2013
