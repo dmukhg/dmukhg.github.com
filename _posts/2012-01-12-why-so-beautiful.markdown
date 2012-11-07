@@ -4,9 +4,6 @@ title: Why so beautiful?
 snip: A theoretical exploration of evolutionary and psychological reasons justifying why some web-pages look to good to be true and others are simply hard to look at. 
 ---
 
-{{ page.title }}
-===
-
 I think our instinctive responses, as humans, can usually be explained by their having evolutionary advantages.  We react peculiarly to situations and stimuli because our reactions enhance our chances of survival, both as individuals and as species.  For example, people find babies cute universally.  This makes us protective of our young.  Note that finding babies cute is not a rational decision.  It is on a subconscious, instinctive level.  You don't **decide** that the baby is cute; you **find** that the baby is cute.
 
 I find it natural to conclude from this and other such examples that beauty is "experienced" or realized on a subconscious, instinctive level.  Although this instinct may be conditioned from years of cultural exposure and some level of personal predisposition, mostly, there is a consensus on what is beautiful and what isn't.  There might be some underlying universal algorithm which is operative in our realization of beauty and that this algorithm also factors in one's predisposition and culture.
