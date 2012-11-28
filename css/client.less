@@ -1,6 +1,7 @@
 /* Definitions */
 @nearWhite   : #efefef;
 @lightGray   : #bbb;
+@midGray     : #888;
 @darkGray    : #222;
 @schBlue     : #0D63BF;
 @schPurple   : #8474D6;
@@ -68,8 +69,7 @@ p {
 
 a {
   text-decoration: none;
-  color: @schBlue;
-}
+  color: @schBlue; }
 
 a:hover {
   text-decoration: none;
@@ -246,4 +246,44 @@ div#footer {
   }
 
   .sch-full-width;
+}
+
+div.imgcon {
+  width: 100%;
+  padding: 1em 0;
+
+  border: 1px solid @lightGray;
+  overflow: hidden;
+  text-align: center;
+
+  span.caption {
+    display: block;
+    font-style: italic;
+    
+    font-size: 0.85em;
+    margin-top: 1em;
+  }
+
+  a:hover {
+    text-decoration: none;
+    border: 0;
+
+    img {
+      border: 1px solid @schLBlue;
+      transition: border 1s;
+      -moz-transition: border 1s;
+      -webkit-transition: border 1s;
+      -o-transition: border 1s;
+    }
+  }
+
+  a {
+    img {
+      border: 1px solid transparent;
+      transition: border 1s;
+      -moz-transition: border 1s;
+      -webkit-transition: border 1s;
+      -o-transition: border 1s;
+    }
+  }
 }
