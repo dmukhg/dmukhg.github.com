@@ -13,7 +13,7 @@ I am a self-taught programmer. I have experience working on web-based applicatio
 ## Work Experience
 
 ###G-Node, INCF at LMU, Munich | Developer
-December 2011 - present 
+December 2011 - November 2012
 
 Wrote a javascript profiling tool and tests using it to benchmark web-plotting libraries.  Wrote a Javascript [library][8] using the SVG API and [d3][9] for plotting of multiple time-series in a dynamic and event driven architecture.  Working on a rich-internet-application that manages and displays electrophysiological experimental data and metadata.
 
@@ -37,12 +37,13 @@ Researched and implemented a prototype, from the ground-up, of a document securi
 Being a startup environment, this internship improved my technical communication skills, also adding to my experience with product-design and conceptualization.  
 
 ## Proficiencies
-Javascript (non-trivial), Python, Java, CUDA-C, C (in decreasing order of experience).  I also have a strong grasp of the web-development lifecycle and version control.
+Javascript, Python, Java, CUDA-C, C (in decreasing order of experience).  I also have a strong grasp of the web-development lifecycle and version control.
 
-I am increasingly interested in the application of Typography to web-pages and also in responsive-design.
+I find myself increasingly interested in the application of Typography to web-pages and also in responsive-design.
 
 ## Education
 Currently enrolled in a B.Tech in Mechanical Engineering at the Indian Institute of Technology, Kharagpur
+CGPA at the end of seven semesters: 7.52
 
 Expected Graduation : 2013
 
