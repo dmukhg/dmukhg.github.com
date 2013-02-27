@@ -13,24 +13,24 @@ I am a self-taught programmer. I have experience working on web-based applicatio
 ## Work Experience
 
 ###G-Node, INCF at LMU, Munich | Developer
-December 2011 - November 2012
+<p class="related italics">December 2011 - November 2012</p>
 
 Wrote a javascript profiling tool and tests using it to benchmark web-plotting libraries.  Wrote a Javascript [library][8] using the SVG API and [d3][9] for plotting of multiple time-series in a dynamic and event driven architecture.  Working on a rich-internet-application that manages and displays electrophysiological experimental data and metadata.
 
 ###Soft Computing Lab, IIT Kharagpur
-August 2012 - present
+<p class="related italics">August 2012 - present</p>
 
 I am working on a [Spiking Neural Network][snn] [implementation][moment] that runs on the Nvidia CUDA platform.
 
 ###International Neuroinformatics Coordinating Facility | Student Developer
-Summer 2011
+<p class="related italics">Summer 2011</p>
 
 Worked with the [German Node][7] of INCF, as a **Google Summer of Code** Student developer, on building a [Data Analysis Tool][6] specifically tailored to handle multi-channel time series data. 
 
 The application was developed using the [Google Web Toolkit][2].
 
 ###Dataresolve Technologies, Kolkata | Development Intern
-Winter 2010
+<p class="related italics">Winter 2010</p>
 
 Researched and implemented a prototype, from the ground-up, of a document security layer over Google Docs.  Development was done in python/django using Google Data APIs.
 

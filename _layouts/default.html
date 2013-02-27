@@ -1,41 +1,38 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>{{ page.title }}</title>
 
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://raw.github.com/necolas/normalize.css/master/normalize.css"/>
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="stylesheet/less" type="text/css" href="/css/reset.less">
-    <link rel="stylesheet/less" type="text/css" href="/css/client.less">
-    <link rel="stylesheet/less" media="print" type="text/css" href="/css/print.less">
+    <link rel="stylesheet" href="/css/normalize.css">
+
+    <!-- Less files begin here -->
+    <link rel="stylesheet/less" href="/css/body.less">
+    <link rel="stylesheet/less" href="/css/type.less">
     <script src="/js/less.js" type="text/javascript"></script>
+    <!-- Less files end here -->
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption:700' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <div id="top-mast" class="page">
-      <div id="logo" class="column">
-        <header>
-        <h1><a href="/">
-            <span class="light">Dipanjan</span>
-            <br>
-            <span class="dark">Mukherjee</span>
-        </a></h1>
-        </header>
-      </div>
-      <div id="navigation" class="column">
-        <ul>
-          <li><a href="/" class="navigation-link">Home</a></li>
-          <li><a href="http://github.com/schatten/" class="navigation-link">Projects</a></li>
-          <li><a href="/about" class="navigation-link">About</a></li>
-        </ul>
+    <div id="sidebar"> 
+      <div id="sidebar-content">
+        Dipanjan Mukherjee's space on the web
+        <div id="tiny-navbar">
+          <a href="/">Essays</a>
+          <a href="http://github.com/schatten/">Github</a>
+        </div>
+        <a class="attribution" href="http://commons.wikimedia.org/wiki/File:Philly_Thinker.JPG">Image from Wikimedia Commons</a>
       </div>
     </div>
-
-    <div class="page" id="main">
+    <div id="main">
+      <div id="main-navbar">
+          <a href="/">Essays</a>
+          <a href="/about">About</a>
+          <a href="http://github.com/schatten/">Github</a>
+      </div>
       {{ content }}
-   </div>
-    <div class="page" id="footer">
-      <p>Dipanjan Mukherjee's space on the web.</p>
-      <p>I am a programmer and a student</p>
     </div>
   </body>
 </html>

@@ -2,13 +2,11 @@
 layout: default
 title: dmulog.in | Dipanjan Mukherjee
 ---
-<ul id="index">
-  {% for post in site.posts %}
-  <a href="{{ post.url }}">
-    <li>
-      <h1>{{ post.title }}</h1>
-      <p>{{ post.snip }}</p>
-    </li>
-  </a>
-  {% endfor %}
-</ul>
+{% for post in site.posts %}
+<div class="post">
+<a class="post-container" href="{{ post.url }}">
+  <h1>{{ post.title }}</h1>
+  <p class="intro">{{ post.snip }}</p>
+</a>
+</div>
+{% endfor %}

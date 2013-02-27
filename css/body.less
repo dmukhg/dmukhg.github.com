@@ -1,0 +1,122 @@
+@import "/css/common.less";
+
+html, body{
+  width: 100%;
+  height: 100%;
+
+  font-family: @DM-font-family;
+  line-height: @DM-line-height;
+}
+
+div#sidebar {
+  height: 100%;
+  width: @DM-sidebar-width;
+  padding: @DM-gutter;
+
+  background-color: @lightGrey;
+  background-image: url('/images/thinker.jpg');
+  background-position: top right;
+  
+  position: fixed;
+  float: left;
+  display: inline-block;
+  .DM-box-sizing-stack;
+
+  border-right: 2px solid @lightGrey;
+
+  div#sidebar-content{
+    width: @DM-sidebar-width - 2 * @DM-gutter;
+    position: absolute; 
+    bottom: @DM-gutter;
+    background-color: @pastelBlueAlpha;
+    padding: @DM-gutter;
+    .DM-box-sizing-stack;
+
+    color: #fff;
+
+    div#tiny-navbar {
+
+      a {
+        display: inline-block;
+        background-color: @lightGrey;
+        border-radius: @DM-gutter/4;
+        padding: @DM-gutter/4 @DM-gutter;
+        margin: @DM-gutter/2 0;
+
+        color: @darkGrey;
+        text-decoration: none;
+        transition: background-color 1s, color 1s;
+      }
+
+      a:hover {
+        color: @darkerGrey;
+        background-color: @pastelGreen; 
+        transition: background-color 1s, color 1s;
+      }
+    }
+
+    a.attribution {
+      color: @lightGrey;
+      text-decoration: none;
+      font-size: 0.9em;
+      float: right;
+    }
+  }
+}
+
+div#main {
+  display: inline-block;
+  width: @DM-main-text-width;
+  .DM-box-sizing-stack;
+
+  background-image: url('/images/aseline_24px.png');
+
+  margin-left: @DM-sidebar-width;
+  margin-bottom: @DM-gutter*4;
+
+  div#main-navbar {
+    width: 100%;
+    text-align: center;
+
+    padding-top: 1.75em;
+    background-color: #fff;
+    border-bottom: 1px solid @lightGrey;
+    margin-bottom: -1px;
+    padding-bottom: 1.25em;
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 @DM-gutter;
+      margin-left: @DM-gutter;
+
+      color: @pastelBlue;
+    }
+
+    a:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+div.post {
+  div.imgcon {
+    margin: 1em 0;
+
+    img {
+      width: 100%;
+    }
+
+    span.caption {
+      padding: @DM-gutter;
+      
+      display: block;
+      background-color: @lightGrey;
+    }
+  }
+
+  div.gist-file {
+    font-size: 0.75em;
+    margin-left: @DM-gutter * 4;
+  }
+}
