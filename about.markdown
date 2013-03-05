@@ -3,19 +3,26 @@ layout: post-without-title
 title: About | dmulog.in 
 ---
 
-## About the author
+## About me
 
-Writing an introduction to an introduction of yourself is a pretty hefty task.  I will set that aside and dig right in.
+I am a programmer and a student.  I primarily work on client-side development
+using Javascript and HTML/css etc.  I also work with the [django][django]
+web-framework and the [python][python] programming language on a variety of
+projects that keep me busy.  
 
-I am a programmer.  I primarily work on client-side development using javascript and HTML/CSS etc.  I also love to use [django][django] and [python][python] on a variety of projects that keep me busy.  Of late, I have also begun working on [Spiking Neural Networks][snn] and am writing a [simulator][moment] based on CUDA.
+Typography for the web has caught my attention recently and I am exploring
+various practical aspects of it.
 
-On a side note, I am becoming increasingly interested in Typography for the web.
+At college, I have been working on [Spiking Neural Networks][snn] and am
+writing a [simulator][moment] based on the NVIDIA CUDA platform.
+
+I love lonely walks and one-on-one heavy-duty discussions.
 
 If you want to employ me or work with me, here is a link to my [resume][resume] and my [email][email].
 
 ## About this site
 
-This site is spit by [jekyll][jekyll] from a template that I designed to work on small as well as big screens using CSS only. For more details on the design principles for this website, you can refer to [this][crazytown] blog post on the topic.
+This site is spit by [jekyll][jekyll] from a custom template.
 
 [django]: http://djangoproject.com/
 [python]: http://www.python.org/
@@ -24,4 +31,3 @@ This site is spit by [jekyll][jekyll] from a template that I designed to work on
 [jekyll]: http://github.com/mojombo/jekyll
 [resume]: /resume
 [email]: mailto:dipanjan.mu@gmail.com
-[crazytown]: /2012/11/28/this-town-is-a-crazy-town.html
