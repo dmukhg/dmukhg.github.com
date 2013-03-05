@@ -18,7 +18,9 @@ writing a [simulator][moment] based on the NVIDIA CUDA platform.
 
 I love lonely walks and one-on-one heavy-duty discussions.
 
-If you want to employ me or work with me, here is a link to my [resume][resume] and my [email][email].
+In case you are seeking to employ me or work with me, here is a link to my
+[resume][resume].  If you want to contact me, maybe have a discussion (or an
+argument), here is my [email][email].
 
 ## About this site
 
