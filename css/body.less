@@ -13,29 +13,20 @@ div#sidebar {
   width: @DM-sidebar-width;
   padding: @DM-gutter;
 
-  background-color: @lightGrey;
-  background-image: url('/images/thinker.jpg');
-  background-position: top right;
-  
-  opacity: 0.6;
-  transition: opacity 1.5s;
-
   position: fixed;
   float: left;
   display: inline-block;
   .DM-box-sizing-stack;
 
-  border-right: 2px solid @lightGrey;
+  border-right: 1px solid @lightGrey;
 
   div#sidebar-content{
     width: @DM-sidebar-width - 2 * @DM-gutter;
     position: absolute; 
     bottom: @DM-gutter;
-    background-color: @pastelBlueAlpha;
+    color: @pastelBlueAlpha;
     padding: @DM-gutter;
     .DM-box-sizing-stack;
-
-    color: #fff;
 
     div#tiny-navbar {
 
@@ -57,29 +48,15 @@ div#sidebar {
         transition: background-color 1s, color 1s;
       }
     }
-
-    a.attribution {
-      color: @lightGrey;
-      text-decoration: none;
-      font-size: 0.9em;
-      float: right;
-    }
   }
 }
-
-div#sidebar:hover {
-  opacity: 1;
-  transition: opacity 1.5s;
-}
-
-
 
 div#main {
   display: inline-block;
   width: @DM-main-text-width;
   .DM-box-sizing-stack;
 
-  background-image: url('/images/aseline_24px.png');
+  background-image: url('/imagesbaseline_24px.png');
 
   margin-left: @DM-sidebar-width;
 
