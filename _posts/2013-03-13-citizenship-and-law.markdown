@@ -18,7 +18,35 @@ law?  Large institutions, such as the modern-state, or even kingdoms exist
 because they align well with human purpose.  They allow us to focus on what we
 want to pursue and not be bogged down with administrative and judicial duties.
 
-## Human Needs
+## The State
+
+I believe the state is one of humanities most advanced acheivements.  It is an
+indicator of the consensual purpose of the human collective.  The problem with
+not having a state-like entity is the inability of people to advance or
+specialize.  They are constantly bogged down with the mundane details and
+cannot become better at their interests.
+
+To work on anything in particular, we need two kinds of things.
+Familiarity/certainty, and corresponding unfamiliarity/uncertainty.  We prefer
+that the things we find familiar are the ones we aren't interested in and the
+ones that we find unfamiliar are the things we want to learn/know about.
+
+Say you want to study plants, you would want to know how they grow, under what
+conditions they are able to survive best and the like.  You would want some
+unfamiliarity in this field: you would want that there be more to know, you
+would want challenges because you *want* to study plants.
+
+During the course of your study, there are many other things you need to worry
+about: your health, your children/family's well being, there being no outward
+intrusions to your garden, etc.  In these finer details of things you are
+hardly interested in, you would want familiarity and predictability.  You
+simply do not want to worry about anything other than your interests.
+
+The state exists for that purpose.  It is a framework that is capable of
+providing an environment that provides for the certainty, familiarity and
+predictability in daily life.  From conventions to assist daily life such as a
+*correct* side of the road to provisions to sustain daily life like laws
+against murder etc.
 
 <graduate from hierarchy of needs to a hierarchy of purposes>
 
