@@ -20,11 +20,11 @@ want to pursue and not be bogged down with administrative and judicial duties.
 
 ## The State
 
-I believe the state is one of humanities most advanced acheivements.  It is an
+I believe the state is one of humanity's most advanced acheivements.  It is an
 indicator of the consensual purpose of the human collective.  The problem with
 not having a state-like entity is the inability of people to advance or
-specialize.  They are constantly bogged down with the mundane details and
-cannot become better at their interests.
+specialize.  They are constantly bogged down with mundane details and cannot
+pursue their interests.
 
 To work on anything in particular, we need two kinds of things.
 Familiarity/certainty, and corresponding unfamiliarity/uncertainty.  We prefer
@@ -43,7 +43,7 @@ hardly interested in, you would want familiarity and predictability.  You
 simply do not want to worry about anything other than your interests.
 
 The state exists for that purpose.  It is a framework that is capable of
-providing an environment that provides for the certainty, familiarity and
+ensuring an environment that provides for certainty, familiarity and
 predictability in daily life.  From conventions to assist daily life such as a
 *correct* side of the road to provisions to sustain daily life like laws
 against murder etc.
