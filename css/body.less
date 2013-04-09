@@ -18,29 +18,43 @@ div.ruled {
     font-size: 1em !important;
   }
 
-  div#main {
+  div.main {
     width: @DM-main-text-width !important;
   }
 }
 
-div#main {
+div#header-logo {
+  background-color: @lightGreen;
+  padding: 1.5em 0 1.25em 0;
+
+  h1 {
+    font-family: @DM-font-family;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 0 @DM-gutter 0 @DM-gutter; 
+    line-height: 1.5em;
+
+    color: @covetedBlue;
+  }
+
+  h2 {
+    font-family: @DM-font-family;
+    font-weight: 300;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0 @DM-gutter 0 @DM-gutter; 
+    line-height: 1;
+
+    color: @darkParchment;
+  }
+}
+
+div.main {
   display: block;
   width: 100%;
   .DM-box-sizing-stack;
 
   margin: 0 auto 1.5em auto;
-
-  div#header-logo {
-    h1 {
-      font-family: @DM-font-family;
-      font-weight: 300;
-      font-size: 1.5em;
-      margin: 0.5em @DM-gutter 0 @DM-gutter; 
-      line-height: 2em;
-
-      color: @pastelGreen;
-    }
-  }
 
   div#main-navbar {
     width: 100%;
