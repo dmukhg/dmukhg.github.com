@@ -27,6 +27,10 @@ div#header-logo {
   background-color: @lightGreen;
   padding: 1.5em 0 1.25em 0;
 
+  a {
+    text-decoration: none;
+  }
+
   h1 {
     font-family: @DM-font-family;
     font-weight: 300;
@@ -35,6 +39,12 @@ div#header-logo {
     line-height: 1.5em;
 
     color: @covetedBlue;
+    transition: color 0.5s;
+  }
+
+  h1:hover {
+    color: @covetedBrightBlue;
+    transition: color 0.75s;
   }
 
   h2 {
