@@ -29,6 +29,8 @@ div#header-logo {
 
   a {
     text-decoration: none;
+    position: relative;
+    right: 110px;
   }
 
   h1 {
@@ -54,6 +56,9 @@ div#header-logo {
     font-style: italic;
     margin: 0 @DM-gutter 0 @DM-gutter; 
     line-height: 1;
+
+    position: relative;
+    right: 110px;
 
     color: @darkParchment;
   }
@@ -128,4 +133,17 @@ div.post {
 
 div.post:last-child {
   padding-bottom: 2em;
+}
+
+div.gravatar {
+  position: relative;
+  right: 130px;
+  float: left;
+
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+
+  background-image: url('../images/gravatar.jpg');
+  background-position: center;
 }
