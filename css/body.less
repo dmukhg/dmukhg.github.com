@@ -18,29 +18,58 @@ div.ruled {
     font-size: 1em !important;
   }
 
-  div#main {
+  div.main {
     width: @DM-main-text-width !important;
   }
 }
 
-div#main {
+div#header-logo {
+  background-color: @lightGreen;
+  padding: 1.5em 0 1.25em 0;
+
+  a {
+    text-decoration: none;
+    position: relative;
+    right: 110px;
+  }
+
+  h1 {
+    font-family: @DM-font-family;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 0 @DM-gutter 0 @DM-gutter; 
+    line-height: 1.5em;
+
+    color: @covetedBlue;
+    transition: color 0.5s;
+  }
+
+  h1:hover {
+    color: @covetedBrightBlue;
+    transition: color 0.75s;
+  }
+
+  h2 {
+    font-family: @DM-font-family;
+    font-weight: 300;
+    font-size: 1em;
+    font-style: italic;
+    margin: 0 @DM-gutter 0 @DM-gutter; 
+    line-height: 1;
+
+    position: relative;
+    right: 110px;
+
+    color: @darkParchment;
+  }
+}
+
+div.main {
   display: block;
   width: 100%;
   .DM-box-sizing-stack;
 
   margin: 0 auto 1.5em auto;
-
-  div#header-logo {
-    h1 {
-      font-family: @DM-font-family;
-      font-weight: 300;
-      font-size: 1.5em;
-      margin: 0.5em @DM-gutter 0 @DM-gutter; 
-      line-height: 2em;
-
-      color: @pastelGreen;
-    }
-  }
 
   div#main-navbar {
     width: 100%;
@@ -76,7 +105,7 @@ div#main {
     font-size: 0.9em;
 
     margin-left: @DM-gutter;
-    margin-bottom: 4 * @DM-gutter;
+    padding-bottom: 4 * @DM-gutter;
   }
 }
 
@@ -108,4 +137,21 @@ div.post {
     margin: 0.75em @DM-gutter;
     padding: @DM-gutter;
   }
+}
+
+div.post:last-child {
+  padding-bottom: 2em;
+}
+
+div.gravatar {
+  position: relative;
+  right: 130px;
+  float: left;
+
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+
+  background-image: url('../images/gravatar.jpg');
+  background-position: center;
 }

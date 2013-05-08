@@ -1,2 +1,5 @@
 markdown: rdiscount
 pygments: true
+name: DMu's Log
+description: Thoughts, musings and rants.
+url: http://dmulog.in/
