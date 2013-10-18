@@ -2,7 +2,9 @@
 layout: post-without-title
 title: Projects | dmulog.in
 ---
-### Sane Start Page <small style="float: right;">[Project Page][ssp]</small>
+### Sane Start Page 
+
+<div class="aside"> <a href="http://dmulog.in/sane-start-page/">Project Page</a> </div>
 
 A chrome extension that replaces the default new tab page with a view of your
 bookmarks + apps. It allows you to pin a particular folder in your bookmarks,
@@ -10,8 +12,9 @@ say 'Read Later'.
 
 <div class="imgcon">
   <img src="images/sane-screen1.png">
-  <span class="caption">Sane-Start-Page in action</span>
 </div>
+
+<div class="aside">Sane-Start-Page in action</div>
 
 So you can build up a working mode like such: You are browsing, you find an
 article that you want to read but can't at the moment, you use the 'star' icon
