@@ -2,6 +2,7 @@
 layout: post
 title: On Citizenship and Law
 snip: An exploration of citizenship as a contract and the inherenet obligation on the part of citizenry to abide by the rules, laws and duties prescribed by the state
+human_date: May, 2013
 ---
 
 First, let's examine citizenship in the context of a modern democracy.  When
@@ -65,10 +66,15 @@ all the intelligent life-forms on earth, we are perhaps best suited to this
 purpose.  The collective effort of humans __should__ be to expand knowledge and
 to as far as possible assist other humans in doing so.  
 
-If somebody is to do original research<sup><a href="#footnote-1">[1]</a></sup>,
-they are the primary pursuers of the human purpose.  If somebody creates value
-for the researchers by providing products and services, they are secondary
-pursuers, but equally important.
+<div class="aside">When I say research, I don't mean simply
+academic research, I mean all forms of knowledge transaction and increments.
+Cooking new dishes is research.  Woodworking, art, improvisation, anything that
+seeks to improve the quality of human life and assist them in further creating
+value is research.</div>
+
+If somebody is to do original research, they are the primary pursuers of the
+human purpose.  If somebody creates value for the researchers by providing
+products and services, they are secondary pursuers, but equally important.
 
 On the other hand, if there are people who negatively affect the pursuers, they
 are detrimental to the spirit of inquiry and must be dealt with by the large
@@ -94,10 +100,5 @@ create new knowledge and utilize it for internal benefits.
 
 <hr>
 
-<small><a name="footnote-1">\[ 1 \]</a> When I say research, I don't mean simply
-academic research, I mean all forms of knowledge transaction and increments.
-Cooking new dishes is research.  Woodworking, art, improvisation, anything that
-seeks to improve the quality of human life and assist them in further creating
-value is research.</small>
 
 [maslow]:http://www.simplypsychology.org/maslow.html 
