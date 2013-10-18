@@ -3,156 +3,105 @@
 html, body{
   width: 100%;
   height: 100%;
+  
+  background-color: @lighterGrey;
 
   font-size: 1.5em;
   font-family: @DM-font-family;
   line-height: @DM-line-height;
 }
 
-div.ruled {
-  background-image: url('/images/baseline_24px.png');
-}
-
-@media only screen and (min-width: 1024px) {
-  html, body {
-    font-size: 1em !important;
-  }
-
-  div.main {
-    width: @DM-main-text-width !important;
-  }
-}
-
 div#header-logo {
-  background-color: @lightGreen;
-  padding: 1.5em 0 1.25em 0;
+  display: block;
 
-  a {
-    text-decoration: none;
-    position: relative;
-    right: 110px;
+  div#logo {
+    display: inline-block;
+
+    a {
+      text-decoration: none;
+      color: @pastelGreen;
+    }
+
+    h1 {
+      font-family: @DM-small-heading-font;
+      font-weight: 400;
+      font-size: 1.5em;
+      margin: 2em 0 0em 0;
+    }
+
+    h2 {
+      font-family: @DM-small-heading-font;
+      font-weight: 400;
+      font-size: 1em;
+      margin: 0.25em 0 1em 0;
+      color: @darkGrey;
+    }
   }
 
-  h1 {
-    font-family: @DM-font-family;
-    font-weight: 300;
-    font-size: 1.5em;
-    margin: 0 @DM-gutter 0 @DM-gutter; 
-    line-height: 1.5em;
+  div#main-navbar {
+    display: inline-block;
+    float: right;
 
-    color: @covetedBlue;
-    transition: color 0.5s;
-  }
+    margin-top: 5em;
 
-  h1:hover {
-    color: @covetedBrightBlue;
-    transition: color 0.75s;
-  }
+    a {
+      display: inline-block;
+      margin-left: 2em;
+      margin-right: 1em;
 
-  h2 {
-    font-family: @DM-font-family;
-    font-weight: 300;
-    font-size: 1em;
-    font-style: italic;
-    margin: 0 @DM-gutter 0 @DM-gutter; 
-    line-height: 1;
+      color: @pastelBlue;
+      text-decoration: none;
 
-    position: relative;
-    right: 110px;
-
-    color: @darkParchment;
+      &:hover {
+        color: @pastelBrightBlue;
+        text-decoration: underline;
+      }
+    }
   }
 }
 
 div.main {
-  display: block;
-  width: 100%;
-  .DM-box-sizing-stack;
-
-  margin: 0 auto 1.5em auto;
-
-  div#main-navbar {
-    width: 100%;
-    text-align: center;
-
-    padding-top: 1.75em;
-    border-bottom: 1px solid @lightGrey;
-    margin-bottom: -1px;
-    padding-bottom: 1.25em;
-
-    a {
-      text-decoration: none;
-      display: inline-block;
-      padding: 0 @DM-gutter;
-      margin-left: @DM-gutter;
-
-      color: @pastelBlue;
-      transition: color 0.5s;
-    }
-
-    a:first-child {
-      margin-left: 0;
-    }
-
-    a:hover {
-      color: @pastelGreen;
-      transition: color 0.5s;
-    }
-  }
-
-  div.author {
-    font-style: italic;
-    font-size: 0.9em;
-
-    margin-left: @DM-gutter;
-    padding-bottom: 4 * @DM-gutter;
-  }
+  padding-bottom: 4em;  
 }
 
 div.post {
-  div.imgcon {
-    margin: 8px;
-
-    img {
-      width: 100%;
-      overflow: clip;
-    }
-
-    span.caption {
-      padding: @DM-gutter;
-      
-      display: block;
-      background-color: @lightGrey;
-    }
+  p {
+    display: inline-block;
+    vertical-align: top;
+    width: 600px;
   }
 
-  div.gist-file {
-    font-size: 0.75em;
-    margin-left: @DM-gutter * 4;
-  }
+  div.aside {
+    display: inline-block;
+    vertical-align: top;
 
-  div.important {
-    .DM-box-sizing-stack;
-    background-color: @pastelLightBlue;
+    width: 150px;
+    font-family: @DM-small-heading-font;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+    float: right;
 
-    margin: 0.75em @DM-gutter;
-    padding: @DM-gutter;
+    color: @darkGrey;
   }
 }
 
-div.post:last-child {
-  padding-bottom: 2em;
+hr {
+  height: 1px;
+  margin-top: -1px;
+  margin-bottom: 1.5em;
+  border: none;
+  background-color: @lightGrey;
 }
 
-div.gravatar {
-  position: relative;
-  right: 130px;
-  float: left;
+@media only screen and (min-width: 1024px) {
+  html, body {
+    width: 790px;
+    font-size: 1em;
+    font-family: @DM-font-family;
+    line-height: @DM-line-height;
 
-  height: 120px;
-  width: 120px;
-  border-radius: 60px;
-
-  background-image: url('../images/gravatar.jpg');
-  background-position: center;
+    margin: 0 auto;
+  }
 }
+
+

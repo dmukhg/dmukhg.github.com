@@ -4,10 +4,14 @@ title: dmulog.in | Dipanjan Mukherjee
 snip: Thoughts, musings and rants of a software developer, student and persevering thinker.
 ---
 {% for post in site.posts %}
+
 <div class="post">
 <a class="post-container" href="{{ post.url }}">
   <h1>{{ post.title }}</h1>
   <p class="intro">{{ post.snip }}</p>
+  <div class="aside">
+    {{ post.human_date }}
+  </div>
 </a>
 </div>
 {% endfor %}
