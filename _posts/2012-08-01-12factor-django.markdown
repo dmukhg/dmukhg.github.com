@@ -2,7 +2,7 @@
 layout: post
 title: 12 Factor Awesomeness for Django apps
 snip: The perfect 12 Factor app is an elusive mistress to most of us.  Here is my take on making it come a bit closer to reality.
-human_date: August, 2012
+humanDate: August, 2012
 ---
 
 The [12Factor][1] app is a collection of design principles, laid down by the good people at Heroku, that help in producing web applications that are easily scalable across Cloud PaaS providers and also tailored to suit developers needs.
