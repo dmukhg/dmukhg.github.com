@@ -1,18 +1,29 @@
 ---
-layout: default
+layout: index
 title: dmulog.in | Dipanjan Mukherjee
-snip: Thoughts, musings and rants of a software developer, student and persevering thinker.
 ---
-{% for post in site.posts %}
-
-<div class="post">
-<a class="post-container" href="{{ post.url }}">
-  <h1>{{ post.title }}</h1>
-  <p class="intro">{{ post.snip }}</p>
-  <div class="aside">
-    {{ post.humanDate }}
-  </div>
-</a>
+<div class="left-column">
+  <!--First two posts come here-->
+  {% for post in site.posts limit:2 %}
+    <div class="post-tile">
+      <a class="post-container" href="{{ post.url }}">
+        <h1>{{ post.title }}</h1>
+        <p class="intro">{{ post.snip }}</p>
+        <span class="date">{{ post.humanDate }}</span>
+      </a>
+    </div>
+  {% endfor %}
 </div>
-{% endfor %}
 
+<div class="right-column">
+  <!--Rest of the posts come here-->
+  {% for post in site.posts offset:2 %}
+    <div class="post-tile">
+      <a class="post-container" href="{{ post.url }}">
+        <h1>{{ post.title }}</h1>
+        <p class="intro">{{ post.snip }}</p>
+        <span class="date">{{ post.humanDate }}</span>
+      </a>
+    </div>
+  {% endfor %}
+</div>

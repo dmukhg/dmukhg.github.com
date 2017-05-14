@@ -1,0 +1,54 @@
+---
+---
+.header-title {
+  a.twitter-link {
+    float: right;
+
+    &:hover > svg {
+      fill: #779ecb;
+    }
+  }
+}
+
+a.home-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+// This bit does the reveal on hover for the header
+a.transform-on-hover {
+  font-weight: 300;
+
+  span.hide-on-hover,span.reveal-on-hover {
+    transition: opacity 0.3s, width 0.5s;
+    display: inline-block;
+  }
+
+  span.hide-on-hover {
+    opacity: 1.0;
+  }
+
+  span.reveal-on-hover {
+    width: 0px;
+    opacity: 0;    
+  }
+
+  &:hover {
+    span.hide-on-hover {
+      width: 0;
+      opacity: 0;
+    }
+
+    span.reveal-on-hover {
+      opacity: 1.0;
+    }
+
+    span.reveal-on-hover.ipanjan {
+      width: 3em;
+    }
+
+    span.reveal-on-hover.ukherjee {
+      width: 3.4em;
+    }
+  }
+}
