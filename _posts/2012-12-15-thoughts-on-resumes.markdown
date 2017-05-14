@@ -72,7 +72,7 @@ are getting the drift.
 With all that removed, you will find your resumé quite spacey and full of
 voids. Fear not, I have a recipe for that as well. :)
 
-##Layout
+## Layout
 
 Most resumés I have seen have near-zero margins. Apparently, there is so much
 to fill in that this becomes necessary. But then, if you paid any regards to
