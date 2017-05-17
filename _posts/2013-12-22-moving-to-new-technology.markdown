@@ -68,10 +68,10 @@ is as valid as
 For a book with multiple authors, you can only use the former mechanism and not
 the latter. In JSON, there is only one way to represent the information.
 
-{% highlight javascript %}
+{% highlight json %}
 {
-  author: "J.K. Rowling",
-  title:  "Harry Potter and the Chamber of Secrets"
+  "author": "J.K. Rowling",
+  "title":  "Harry Potter and the Chamber of Secrets"
 }
 {% endhighlight %}
 
