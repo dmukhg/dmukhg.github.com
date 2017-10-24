@@ -16,10 +16,10 @@ title: dmulog.in | Dipanjan Mukherjee
       </div>
     {% endfor %}
 </div>
-
-<div class="posts-column">
-  <h1>Essays</h1>
-  {% for post in site.posts %}
+<div class="section-2">
+  <div class="posts-column">
+    <h1>Essays</h1>
+    {% for post in site.posts %}
     <div class="post-tile">
       <a class="post-container" href="{{ post.url }}">
         <div class="cover-image" style="background-image: url('{{ post.cover }}');"></div>
@@ -28,12 +28,12 @@ title: dmulog.in | Dipanjan Mukherjee
         <span class="date">{{ post.humanDate }}</span>
       </a>
     </div>
-  {% endfor %}
-</div>
-
-<div class="notes-column">
-  <h1>Notes</h1>
-  {% for note in site.notes offset:1 %}
+    {% endfor %}
+  </div>
+  
+  <div class="notes-column">
+    <h1>Notes</h1>
+    {% for note in site.notes offset:1 %}
     <div class="note-tile">
       <a class="note-container" href="{{ note.url }}">
         <div class="cover-image" style="background-image: url('{{ post.cover }}');">&nbsp;</div>
@@ -42,5 +42,6 @@ title: dmulog.in | Dipanjan Mukherjee
         <span class="date">{{ note.humanDate }}</span>
       </a>
     </div>
-  {% endfor %}
+    {% endfor %}
+  </div>
 </div>

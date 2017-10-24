@@ -3,7 +3,8 @@ layout: post
 title: Why so beautiful? 
 snip: A theoretical exploration of evolutionary and psychological reasons justifying why some web-pages look to good to be true and others are simply hard to look at. 
 humanDate: January, 2012
-cover: http://www.wallpapers-web.com/data/out/93/4563064-great-wallpapers.jpg
+cover: https://drscdn.500px.org/photo/113017587/m%3D900/v2?webp=true&sig=5d2e6303a29ae201479b98dacca4be4e6eefdf3d86aeb7cd6c08ceb2abb369e9
+coverAttrib: https://500px.com/photo/113017587/urban-architecture-by-simon-alexander
 ---
 
 I think our instinctive responses, as humans, can usually be explained by their having evolutionary advantages.  We react peculiarly to situations and stimuli because our reactions enhance our chances of survival, both as individuals and as species.  For example, people find babies cute universally.  This makes us protective of our young.  Note that finding babies cute is not a rational decision.  It is on a subconscious, instinctive level.  You don't **decide** that the baby is cute; you **find** that the baby is cute.

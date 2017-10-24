@@ -3,8 +3,12 @@ layout: base
 ---
 {% include header.html %}
 
+<div class="cover">
+  <div class="cover-image" style="background-image: url('{{ page.cover }}');"></div>
+  <div class="cover-attribution"><a href="{{ page.coverAttrib }}">{{ page.coverAttrib }}</a></div>
+</div>
+
 <div class="article">
   <h1 class="article-title">{{ page.title }}</h1>
-
   {{ content }}
 </div>

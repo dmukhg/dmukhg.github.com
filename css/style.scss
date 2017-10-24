@@ -26,16 +26,15 @@ tile-shadow {
 }
 
 body {
-  margin: auto;
-  width: 900px;
-
   font-size: 22px;
   font-weight: 400;
   font-family: Vollkorn;
 }
 
 div.hero {
-  width: 100%;
+  margin: auto;
+  width: 900px;
+
   height: 300px;
 
   div.note-tile {
@@ -61,6 +60,8 @@ div.hero {
     height: 100%;
 
     background-color: $col-accent;
+    background-position: center;
+    background-size: cover;
   }
 
   div.content {
@@ -103,6 +104,11 @@ h1 {
   color: rgba(0, 0, 0, 0.47);
 }
 
+div.section-2 {
+  width: 900px;
+  margin: auto;  
+}
+
 div.posts-column {
   box-sizing: border-box;
   display: inline-block;
@@ -121,6 +127,9 @@ div.posts-column {
       .cover-image {
         background-color: $col-accent;
         height: 120px;
+
+        background-position: center;
+        background-size: cover;
 
         transition: height 0.3s;
       }
@@ -178,6 +187,9 @@ div.notes-column {
         background-color: $col-accent;
         height: 120px;
 
+        background-position: center;
+        background-size: cover;
+
         transition: height 0.3s;
       }
 
@@ -216,7 +228,30 @@ div.notes-column {
   }
 }
 
+div.cover {
+  div.cover-image {
+    width: 100vw;
+    height: 400px;
+
+    background-position: center;
+    background-size: cover;
+  }
+  
+  div.cover-attribution {
+    text-align: center;
+    margin-bottom: 20px;
+    
+    a {
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.47);
+    }
+  }
+}
+
 div.article {
+  width: 900px;
+  margin: 10px auto;
+
   h1 {
     color: $col-accent;
     font-size: 36px;
@@ -236,6 +271,8 @@ div.article {
     color: $col-text;
     font-size: 18px;
     line-height: 1.44;
+
+    margin-bottom: 2em;
   }
 
   a {
