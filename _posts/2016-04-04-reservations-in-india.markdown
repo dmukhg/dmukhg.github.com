@@ -3,7 +3,8 @@ layout: post
 title: Reservations in India; Why do we still need them?
 snip: A look into why even after so many years, reservations make sense. What are some of the short and long term objectives of a reservations program?
 humanDate: April, 2016
-cover: http://www.wallpapers-web.com/data/out/93/4563064-great-wallpapers.jpg
+cover: https://drscdn.500px.org/photo/233020889/m%3D900/v2?webp=true&sig=fa880fa590a0650a0d8ac9e4a558ea2b152847295ddf2ccdefb8a393ad38b9c8
+coverAttrib: https://500px.com/photo/233020889/coach-and-boy-and-girl-ice-hockey-players-joining-hands-in-huddle-by-hero-images
 ---
 An irritated population often asks why, even after 60 years of independence, we need a caste-based reservation system.
 
