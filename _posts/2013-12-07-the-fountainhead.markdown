@@ -3,7 +3,8 @@ layout: post
 title: Ayn Rand, The Fountainhead
 snip: A brief review of one of the most riveting books I have read so far.
 humanDate: December, 2013
-cover: http://www.wallpapers-web.com/data/out/93/4563064-great-wallpapers.jpg
+cover: https://drscdn.500px.org/photo/208017349/m%3D900/v2?webp=true&sig=a430cd23c9bd5f30a2bedabed46866d59718221072aef7d57f7603e18a0fe5ae
+coverAttrib: https://500px.com/photo/208017349/architectural-waterfall-by-lorenzo-bianchini
 ---
 
 Imagine you are standing on the shore of an ocean. It is night time and an ever

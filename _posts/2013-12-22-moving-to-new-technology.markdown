@@ -3,7 +3,8 @@ layout: post
 title: Learning to leave the fallen behind
 snip: A case for not supporting the older XML messaging system for your new APIs. Sacrificing backwards compatibility for a better tomorrow.
 humanDate: December, 2013
-cover: http://www.wallpapers-web.com/data/out/93/4563064-great-wallpapers.jpg
+cover: https://drscdn.500px.org/photo/204004709/m%3D900/v2?webp=true&sig=3529e8504dbb60c54e5197aa07fec0e97b0a96d84a03fdf5c9d7b17a0f3ea3f3
+coverAttrib: https://500px.com/photo/204004709/retro-red-robot-fallen-over-on-rocks-by-devon-crosby
 ---
 
 So, we have been working on creating a public facing API. We are working in a
