@@ -3,6 +3,7 @@ layout: post
 title: Building a fear-free software engineering team, Part I
 snip: Creating an environment of confidence leads to faster development cycles and lesser customers being affected by bugs.
 humanDate: October, 2015
+cover: http://www.wallpapers-web.com/data/out/93/4563064-great-wallpapers.jpg
 ---
 I started working with [TypesetIO](https://typeset.io/) a few weeks ago. We are working on a way to create research papers that let you focus totally on the content while leaving the formatting to us. In my first few weeks, I wanted to setup some basic tools that make us developers more efficient.
 

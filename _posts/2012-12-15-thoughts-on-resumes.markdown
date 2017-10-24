@@ -3,6 +3,7 @@ layout: post
 title: Thoughts on resumés
 snip: A collection of ideas on popular types of resumés I have seen in my peer group and why,l from an information-design perspective, they fall flat and miss the point completely.
 humanDate: December, 2012
+cover: http://www.wallpapers-web.com/data/out/93/4563064-great-wallpapers.jpg
 ---
 
 First, consider this: *You* are the recruiter. You have got about an hour, to

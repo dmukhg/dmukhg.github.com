@@ -1,11 +1,16 @@
 ---
 ---
+
+$col-accent: #E52016;
+
 .header-title {
+  font-family: Lato;
+  
   a.twitter-link {
     float: right;
 
     &:hover > svg {
-      fill: #779ecb;
+      fill: $col-accent;
     }
   }
 }
@@ -17,7 +22,7 @@ a.home-link {
 
 // This bit does the reveal on hover for the header
 a.transform-on-hover {
-  font-weight: 300;
+  font-weight: 400;
 
   span.hide-on-hover,span.reveal-on-hover {
     transition: opacity 0.3s, width 0.5s;
@@ -44,11 +49,11 @@ a.transform-on-hover {
     }
 
     span.reveal-on-hover.ipanjan {
-      width: 3em;
+      width: 3.3em;
     }
 
     span.reveal-on-hover.ukherjee {
-      width: 3.4em;
+      width: 3.9em;
     }
   }
 }

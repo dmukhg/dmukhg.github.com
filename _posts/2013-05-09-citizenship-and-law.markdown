@@ -3,6 +3,7 @@ layout: post
 title: On Citizenship and Law
 snip: An exploration of citizenship as a contract and the inherenet obligation on the part of citizenry to abide by the rules, laws and duties prescribed by the state
 humanDate: May, 2013
+cover: http://www.wallpapers-web.com/data/out/93/4563064-great-wallpapers.jpg
 ---
 
 First, let's examine citizenship in the context of a modern democracy.  When

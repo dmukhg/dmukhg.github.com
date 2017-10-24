@@ -3,6 +3,7 @@ layout: post
 title: Building a fear-free software engineering team, Part II
 snip: Flying solo; Assuring quality without a quality engineering team. Providing control over quality to engineers by streamlining deployment.
 humanDate: November, 2015
+cover: http://www.wallpapers-web.com/data/out/93/4563064-great-wallpapers.jpg
 ---
 
 At [TypesetIO](https://typeset.io/) we don’t yet have QA engineers. This doesn’t have to mean that we are not focused on quality. Quality Engineers are human and may make mistakes. The same applies for Development Engineers. If it is possible for both to make mistakes, I would rather make those mistakes cost less than trying to ensure that there are no mistakes.
