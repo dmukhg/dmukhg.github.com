@@ -3,18 +3,21 @@
 @import '/css/normalize.css';
 
 $col-accent: #E52016;
+$col-sub-headings: rgba(0,0,0, 0.6);
 $col-text: rgba(0,0,0,0.87);
 
 $sz-padding: 20px;
 
+$serif-font: 'Source Sans Pro';
+
 @import '/css/header.css';
 
 body-text {
-  font-family: Vollkorn;
+  font-family: $serif-font;
   color: $col-text;
 
-  font-size: 18px;
-  line-height: 1.44;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 tile-shadow {
@@ -26,9 +29,8 @@ tile-shadow {
 }
 
 body {
-  font-size: 22px;
   font-weight: 400;
-  font-family: Vollkorn;
+  font-family: $serif-font;
 }
 
 div.hero {
@@ -76,7 +78,6 @@ div.hero {
   }
 
   h1 {
-    font-family: Lato;
     font-weight: 400;
 
     margin: 0;
@@ -99,7 +100,7 @@ div.hero {
 
 h1 {
   font-size: 36px;
-  font-family: Vollkorn;
+  font-family: $serif-font;
 
   color: rgba(0, 0, 0, 0.47);
 }
@@ -147,7 +148,6 @@ div.posts-column {
       color: $col-accent;
       font-size: 22px;
 
-      font-family: Lato;
       font-weight: 400;
 
       margin-bottom: 0;
@@ -206,7 +206,6 @@ div.notes-column {
       color: $col-accent;
       font-size: 22px;
 
-      font-family: Lato;
       font-weight: 400;
 
       margin-bottom: 0;
@@ -252,19 +251,35 @@ div.article {
   width: 900px;
   margin: 10px auto;
 
-  h1 {
+  h1.article-title {
     color: $col-accent;
     font-size: 36px;
 
-    font-family: Lato;
     font-weight: 400;
 
     margin-bottom: 0;
   }
 
   p, ul,ol,h1,h2,h3,h4,h5,h6 {
-    font-family: Vollkorn;
+    font-family: $serif-font;
     width: 500px;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    color: $col-accent;
+
+    margin-bottom: 0em;
+    margin-top: 1em;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+    color: $col-sub-headings;
   }
   
   p, ul, ol {
@@ -272,7 +287,8 @@ div.article {
     font-size: 18px;
     line-height: 1.44;
 
-    margin-bottom: 2em;
+    margin-bottom: 1.75em;
+    margin-top: 0.25em;
   }
 
   a {
