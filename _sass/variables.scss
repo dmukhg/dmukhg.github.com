@@ -1,0 +1,14 @@
+$col-accent: #ff6400;
+$col-blue: #007AFF;
+$col-gray: #7e7e7e;
+
+$serif-font: 'Roboto';
+
+$sz-page-width: 900px;
+$sz-article-width: 500px;
+$sz-padding: 10px;
+
+.page-width {
+  width: $sz-page-width;
+  margin: 0 auto;
+}

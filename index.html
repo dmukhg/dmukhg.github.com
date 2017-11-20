@@ -2,46 +2,13 @@
 layout: index
 title: dmulog.in | Dipanjan Mukherjee
 ---
-<div class="hero">
-    {% for note in site.notes limit:1 %}
-      <div class="note-tile">
-        <a href="{{ note.url }}" class="note-container">
-          <div class="cover-image" style="background-image: url('{{ note.cover }}');">&nbsp;</div>
-          <div class="content">
-            <h1>{{ note.title }}</h1>
-            <p class="intro">{{ note.snip }}</p>
-            <span class="date">{{ note.humanDate }}</span>
-          </div>
-        </a>
-      </div>
-    {% endfor %}
+{% for post in site.posts %}
+<div class="post-tile article-width">
+  <a href="{{ post.url }}">
+    <h1>{{ post.title }}</h1>
+  </a>
+  {{ post.excerpt }}
+  <span class="date">{{ post.humanDate }}</span>
+  </a>
 </div>
-<div class="section-2">
-  <div class="posts-column">
-    <h1>Essays</h1>
-    {% for post in site.posts %}
-    <div class="post-tile">
-      <a class="post-container" href="{{ post.url }}">
-        <div class="cover-image" style="background-image: url('{{ post.cover }}');"></div>
-        <h1>{{ post.title }}</h1>
-        <p class="intro">{{ post.snip }}</p>
-        <span class="date">{{ post.humanDate }}</span>
-      </a>
-    </div>
-    {% endfor %}
-  </div>
-  
-  <div class="notes-column">
-    <h1>Notes</h1>
-    {% for note in site.notes offset:1 %}
-    <div class="note-tile">
-      <a class="note-container" href="{{ note.url }}">
-        <div class="cover-image" style="background-image: url('{{ note.cover }}');">&nbsp;</div>
-        <h1>{{ note.title }}</h1>
-        <p class="intro">{{ note.snip }}</p>
-        <span class="date">{{ note.humanDate }}</span>
-      </a>
-    </div>
-    {% endfor %}
-  </div>
-</div>
+{% endfor %}

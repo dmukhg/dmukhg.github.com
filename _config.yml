@@ -4,6 +4,3 @@ description: Thoughts, musings and rants.
 url: http://dmulog.in/
 permalink: /writings/:title.html
 
-collections:
-  notes:
-    output: true

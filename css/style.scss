@@ -1,302 +1,38 @@
 ---
 ---
+@import 'variables';
+
 @import '/css/normalize.css';
-
-$col-accent: #E52016;
-$col-sub-headings: rgba(0,0,0, 0.6);
-$col-text: rgba(0,0,0,0.87);
-
-$sz-padding: 20px;
-
-$serif-font: 'Source Sans Pro';
-
 @import '/css/header.css';
 
-body-text {
-  font-family: $serif-font;
-  color: $col-text;
-
-  font-size: 15px;
-  line-height: 24px;
-}
-
-tile-shadow {
-  transition: all 0.3s;
-
-  &:hover {
-    box-shadow: 0px 9px 19px -9px rgba(0, 0, 0, 0.75)
-  }
-}
-
 body {
-  font-weight: 400;
-  font-family: $serif-font;
+  border-top: 4px solid $col-accent;
+  line-height: 1.5em;
+
+  padding-bottom: 150px;
 }
 
-div.hero {
-  margin: auto;
-  width: 900px;
-
-  height: 300px;
-
-  div.note-tile {
-    height: 100%;
-  }
-
-  a {
-    @extend tile-shadow;
-    
-    text-decoration: none;
-    color: $col-text;
-
-    display: block;
-    height: 100%;
-  }
-
-  div.cover-image {
-    display: inline-block;
-    box-sizing: border-box;
-    vertical-align: top;
-
-    width: 60%;
-    height: 100%;
-
-    background-color: $col-accent;
-    background-position: center;
-    background-size: cover;
-  }
-
-  div.content {
-    display: inline-block;
-    box-sizing: border-box;
-    vertical-align: top;
-
-    padding: 0 $sz-padding;
-
-    width: 39%;
-    max-height: 100%;
-  }
-
-  h1 {
-    font-weight: 400;
-
-    margin: 0;
-    font-size: 36px;
-
-    color: $col-accent;
-  }
-
-  p.intro {
-    @extend body-text;
-  }
-
-  span.date {
-    display: block;
-    text-align: right;
-    font-size: 16px;
-    color: rgba(0,0,0,0.67);
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: $col-accent;
+  margin: 1.35em 0 0.15em 0;
+  line-height: 1.25em;
 }
 
-h1 {
-  font-size: 36px;
-  font-family: $serif-font;
-
-  color: rgba(0, 0, 0, 0.47);
+a {
+  color: $col-blue;
+  text-decoration: none;
 }
 
-div.section-2 {
-  width: 900px;
-  margin: auto;  
+a:visited {
+  color: initial;
 }
 
-div.posts-column {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 60%;
-
-  div.post-tile {
-    a {
-      @extend tile-shadow;
-      
-      display: inline-block;
-      margin-bottom: $sz-padding;
-
-      text-decoration: none;
-      color: $col-text;
-
-      .cover-image {
-        background-color: $col-accent;
-        height: 120px;
-
-        background-position: center;
-        background-size: cover;
-
-        transition: height 0.3s;
-      }
-
-      &:hover {
-        .cover-image {
-          height: 200px;
-        }
-      }
-    }
-
-    h1 {
-      padding: 0 $sz-padding;
-      
-      color: $col-accent;
-      font-size: 22px;
-
-      font-weight: 400;
-
-      margin-bottom: 0;
-    }
-
-    p.intro {
-      @extend body-text;
-      padding: 0 $sz-padding;
-    }
-
-    span.date {
-      display: block;
-      text-align: right;
-      font-size: 16px;
-      color: rgba(0,0,0,0.67);
-      margin: 0 $sz-padding $sz-padding 0;
-    }
-  }
+span.date {
+  color: $col-gray;
 }
 
-div.notes-column {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 39%;
-  vertical-align: top;
-
-  div.note-tile {
-    a {
-      @extend tile-shadow;
-    
-      text-decoration: none;
-      color: $col-text;
-      display: inline-block;
-      margin-bottom: $sz-padding;
-
-      .cover-image {
-        background-color: $col-accent;
-        height: 120px;
-
-        background-position: center;
-        background-size: cover;
-
-        transition: height 0.3s;
-      }
-
-      &:hover {
-        .cover-image {
-          height: 200px;
-        }
-      }
-    }
-
-    h1 {
-      padding: 0 $sz-padding;
-      
-      color: $col-accent;
-      font-size: 22px;
-
-      font-weight: 400;
-
-      margin-bottom: 0;
-    }
-
-    p.intro {
-      @extend body-text;
-      padding: $sz-padding;
-    }
-
-    span.date {
-      display: block;
-      text-align: right;
-      font-size: 16px;
-      color: rgba(0,0,0,0.67);
-
-      margin: 0 $sz-padding $sz-padding 0;
-    }
-  }
-}
-
-div.cover {
-  div.cover-image {
-    width: 100vw;
-    height: 400px;
-
-    background-position: center;
-    background-size: cover;
-  }
-  
-  div.cover-attribution {
-    text-align: center;
-    margin-bottom: 20px;
-    
-    a {
-      font-size: 16px;
-      color: rgba(0, 0, 0, 0.47);
-    }
-  }
-}
-
-div.article {
-  width: 900px;
-  margin: 10px auto;
-
-  h1.article-title {
-    color: $col-accent;
-    font-size: 36px;
-
-    font-weight: 400;
-
-    margin-bottom: 0;
-  }
-
-  p, ul,ol,h1,h2,h3,h4,h5,h6 {
-    font-family: $serif-font;
-    width: 500px;
-  }
-
-  h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
-    color: $col-accent;
-
-    margin-bottom: 0em;
-    margin-top: 1em;
-  }
-
-  h1 {
-    font-size: 32px;
-  }
-
-  h2 {
-    font-size: 24px;
-    color: $col-sub-headings;
-  }
-  
-  p, ul, ol {
-    color: $col-text;
-    font-size: 18px;
-    line-height: 1.44;
-
-    margin-bottom: 1.75em;
-    margin-top: 0.25em;
-  }
-
-  a {
-    color: $col-accent;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
+.article-width {
+  width: $sz-article-width;
+  margin: 0 auto;
 }

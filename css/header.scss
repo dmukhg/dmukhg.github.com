@@ -1,10 +1,10 @@
 ---
+# Ensures that this is processed by jekyll
 ---
-
-$col-accent: #E52016;
+@import 'variables';
 
 .header-title {
-  width: 900px;
+  width: $sz-page-width;
   margin: 10px auto;
   
   a.twitter-link {
